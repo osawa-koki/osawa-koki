@@ -1,6 +1,6 @@
 # たこさんマークのエンジニヤ
 
-![たこさん](/property/タコ.jpg)  
+![たこさん](/property/tako.png)  
 
 - 👋 Hi, I’m @osawa-koki
 - 👀 I’m interested in ...
