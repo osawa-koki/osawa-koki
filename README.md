@@ -16,3 +16,4 @@
 - [差分確認ツール](https://osawa-koki.github.io/diff.js/)
 - [Web Timer](https://osawa-koki.github.io/Web-Timer/)
 - [バイナリ確認サイト](https://osawa-koki.github.io/binarySheet.ts/)
+- [Bitmapファイル構造確認サイト](https://osawa-koki.github.io/BitmapSheet.ts/)
