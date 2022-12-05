@@ -17,3 +17,4 @@
 - [Web Timer](https://osawa-koki.github.io/Web-Timer/)
 - [バイナリ確認サイト](https://osawa-koki.github.io/binarySheet.ts/)
 - [Bitmapファイル構造確認サイト](https://osawa-koki.github.io/BitmapSheet.ts/)
+- [整列アルゴリズムデモサイト](https://osawa-koki.github.io/sorter-demo.ts/)
