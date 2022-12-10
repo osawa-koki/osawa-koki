@@ -13,3 +13,8 @@ $ simple-grep
 $ text-similarity-checker
 
 テキストの類似度をチェックする。
+
+$ カラーピッカー
+
+色のテストサイト。
+RGB HSLその他もろもろ。
