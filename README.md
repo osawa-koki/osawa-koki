@@ -55,8 +55,6 @@ Prefering TypeScript to javaScript.
 
 Here are some tools I developped.  
 
-## 簡単なプログラム
-
 - [bezier cubic maker](https://osawa-koki.github.io/bezier-maker.js/)
 - [special chars creator](https://osawa-koki.github.io/special-char.ts/)
 - [password generator](https://osawa-koki.github.io/password-generator.elm/)
@@ -66,3 +64,7 @@ Here are some tools I developped.
 - [bitmap file checker](https://osawa-koki.github.io/BitmapSheet.ts/)
 - [sorting algoritym demonstration site](https://osawa-koki.github.io/sorter-demo.ts/)
 - [simple image editor](https://osawa-koki.github.io/simple-image-manipulator.ts/)
+
+The languages I can write are...
+0: starter level  
+5: professional level
