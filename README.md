@@ -19,3 +19,27 @@
 - [Bitmapファイル構造確認サイト](https://osawa-koki.github.io/BitmapSheet.ts/)
 - [整列アルゴリズムデモサイト](https://osawa-koki.github.io/sorter-demo.ts/)
 - [画像編集サイト](https://osawa-koki.github.io/simple-image-manipulator.ts/)
+
+## For English Speakers
+
+Hello, I am an "Octopus marked software engineer".  
+"Octopus marked software engineer" is a simple wordplay (or funny joke? in japan).  
+Not having a deep meaning...  
+
+I started programming when aged 20 or a bit younger (of 2nd stage of Univ), though I was majoring in Accouting.  
+A main purpose of my program was to calculate stock price automatically.  
+
+Then, forwarded for the road of security engineer.  
+The reason I took that way was obscure, probably having had an good impression for security technology something cool or ...  
+
+Now in 2022, started working web company as a security engineer.  
+Checking webapp-based vulnerabilities such as 'SQL injection' 'XML injection' 'XSS' 'Authentication failure'.
+
+Especially, because we perform deploy EC site which uses creditcard,  spending much time making rules to follow PCI-DSS like down below.  
+
+- File Falsification detect tool.
+- CSP setting failure detect tool.
+- SQL injection vulnerabilities auto detect tool.
+
+At private, developing simple-tool which works in a browser.
+
