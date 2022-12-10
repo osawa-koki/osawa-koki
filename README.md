@@ -18,3 +18,4 @@
 - [バイナリ確認サイト](https://osawa-koki.github.io/binarySheet.ts/)
 - [Bitmapファイル構造確認サイト](https://osawa-koki.github.io/BitmapSheet.ts/)
 - [整列アルゴリズムデモサイト](https://osawa-koki.github.io/sorter-demo.ts/)
+- [画像編集サイト](https://github.com/osawa-koki/simple-image-manipulator.ts)
