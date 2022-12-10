@@ -41,5 +41,28 @@ Especially, because we perform deploy EC site which uses creditcard,  spending m
 - CSP setting failure detect tool.
 - SQL injection vulnerabilities auto detect tool.
 
-At private, developing simple-tool which works in a browser.
+At private, developing simple-tool which works in a browser.  
 
+Loving frameworks (libraries) down below.
+
+- Vue.js
+- React
+- Next.js
+- Nuxt.js
+- elm
+
+Prefering TypeScript to javaScript.  
+
+Here are some tools I developped.  
+
+## 簡単なプログラム
+
+- [bezier cubic maker](https://osawa-koki.github.io/bezier-maker.js/)
+- [special chars creator](https://osawa-koki.github.io/special-char.ts/)
+- [password generator](https://osawa-koki.github.io/password-generator.elm/)
+- [text diff check tool](https://osawa-koki.github.io/diff.js/)
+- [Web Timer](https://osawa-koki.github.io/Web-Timer/)
+- [binary checker](https://osawa-koki.github.io/binarySheet.ts/)
+- [bitmap file checker](https://osawa-koki.github.io/BitmapSheet.ts/)
+- [sorting algoritym demonstration site](https://osawa-koki.github.io/sorter-demo.ts/)
+- [simple image editor](https://osawa-koki.github.io/simple-image-manipulator.ts/)
