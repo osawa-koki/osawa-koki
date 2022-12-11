@@ -59,6 +59,7 @@ Here are some tools I developped.
 - [bitmap file checker](https://osawa-koki.github.io/BitmapSheet.ts/)
 - [sorting algoritym demonstration site](https://osawa-koki.github.io/sorter-demo.ts/)
 - [simple image editor](https://osawa-koki.github.io/simple-image-manipulator.ts/)
+- [simple-grep](https://osawa-koki.github.io/simple-grep.ts/)
 
 The languages I can write are...  
 0: starter level  
