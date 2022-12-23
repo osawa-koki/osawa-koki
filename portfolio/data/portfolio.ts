@@ -134,7 +134,7 @@ const portfolio: Portfolio[] = [
     created_at: new Date("2021-12-15"),
     tech_used: ["TypeScript", "Next.js", "C#", "SQL", "Docker", "Nginx"],
     recommend: 5,
-  }
+  },
 ];
 
 export default portfolio.sort((a, b) => b.recommend - a.recommend);
