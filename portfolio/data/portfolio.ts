@@ -25,6 +25,7 @@ type Tech =
   | "Kotlin"
   | "SQL"
   | "NoSQL"
+  | "Nginx"
 
 type Portfolio = {
   name: string;
@@ -125,6 +126,15 @@ const portfolio: Portfolio[] = [
     tech_used: ["Python", "FastAPI", "Docker"],
     recommend: 2,
   },
+  {
+    name: "Simple Quiz",
+    description: "クイズ大会を開催できるシンプルなサイト。",
+    repo_url: "https://github.com/simple-quiz-org",
+    production_url: "https://simple-quiz.org/",
+    created_at: new Date("2021-12-15"),
+    tech_used: ["TypeScript", "Next.js", "C#", "SQL", "Docker", "Nginx"],
+    recommend: 5,
+  }
 ];
 
 export default portfolio.sort((a, b) => b.recommend - a.recommend);
