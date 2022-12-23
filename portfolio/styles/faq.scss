@@ -1,0 +1,14 @@
+
+#Faq {
+  max-width: 1200px;
+  padding: 1rem;
+  .FaqUnit {
+    margin-top: 3rem;
+    border-bottom: 1px lightgray solid;
+    padding-bottom: 3rem;
+    .FaqAnswer {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}

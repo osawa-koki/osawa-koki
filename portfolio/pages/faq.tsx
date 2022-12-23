@@ -28,13 +28,15 @@ const FaqPage = () => {
 
   return (
     <Layout title="osawa's FAQ">
-    <div id='FAQ'>
+    <div id='Faq'>
       <h1>FAQ</h1>
       {
         faqs.map((f, _) => {
           return (
-            <div key={f.id}>
+            <div className='FaqUnit' key={f.id}>
               <Button
+                className='FaqAnswer'
+                variant="outline-primary"
                 onClick={() => {
                   const new_open = faqs.map((o, _) => {
                     if (o.id === f.id) {
@@ -58,7 +60,7 @@ const FaqPage = () => {
                 {f.question}
               </Button>
               <Collapse in={f.open}>
-                <div id="example-collapse-text">
+                <div className='answer'>
                   {f.answer}
                   <br />
                   {f.detail}

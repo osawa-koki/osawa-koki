@@ -14,14 +14,14 @@ type _Faq = {
 
 const _faq: _Faq[] = [
   {
-    question: 'How to use this app?',
-    answer: 'You can use this app by following the steps below.',
-    detail: '1. Open the app. 2. Click the button. 3. Enjoy the app.'
+    question: 'インデントはタブ派？、スペース派？',
+    answer: 'スペース派です。',
+    detail: '例外的にGo言語など、タブ文字が推奨されている場合には、タブ文字を使用します。'
   },
   {
-    question: 'How to use this app?',
-    answer: 'You can use this app by following the steps below.',
-    detail: '1. Open the app. 2. Click the button. 3. Enjoy the app.'
+    question: 'インデントサイズは何文字？',
+    answer: '2文字が好きです。',
+    detail: '4タブだとどんどん右に進んでしまうため、2タブが好きです。'
   },
 ];
 
