@@ -1,13 +1,15 @@
-import React, { ReactNode } from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import React, { ReactNode } from 'react';
+import Link from 'next/link';
+import Head from 'next/head';
 
 type Props = {
-  children?: ReactNode
-  title?: string
+  children?: ReactNode,
+  title?: string,
 }
 
-const Layout = ({ children, title = 'This is the default title' }: Props) => (
+const default_title = "osawa's portfolio";
+
+const Layout = ({ children, title = default_title }: Props) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -16,17 +18,17 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
     </Head>
     <header>
       <nav>
-        <Link href="/">Home</Link> | <Link href="/about">About</Link> |{' '}
-        <Link href="/users">Users List</Link> |{' '}
-        <a href="/api/users">Users API</a>
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/portfolio">Portfolio</Link>
+        <Link href="/contact">Contact</Link>
       </nav>
     </header>
-    {children}
-    <footer>
-      <hr />
-      <span>I'm here to stay (Footer)</span>
-    </footer>
+    <main>
+      {children}
+    </main>
+    <footer>🥺 osawa koki 🥺</footer>
   </div>
 )
 
-export default Layout
+export default Layout;
