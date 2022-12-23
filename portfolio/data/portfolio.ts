@@ -9,7 +9,9 @@ type Tech =
   | "Vue.js"
   | "Nuxt.js"
   | "Docker"
+  // Python
   | "Python"
+  | "FastAPI"
   | "Ruby"
   | "Perl"
   | "PHP"
@@ -114,6 +116,14 @@ const portfolio: Portfolio[] = [
     created_at: new Date("2021-12-15"),
     tech_used: ["TypeScript", "Next.js"],
     recommend: 5,
+  },
+  {
+    name: "gui on linux",
+    description: "LinuxをGUIで操作するためのツール。",
+    repo_url: "https://github.com/osawa-koki/gui-on-linux",
+    created_at: new Date("2021-12-15"),
+    tech_used: ["Python", "FastAPI", "Docker"],
+    recommend: 2,
   },
 ];
 
