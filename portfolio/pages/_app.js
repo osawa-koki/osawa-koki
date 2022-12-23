@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../styles/Layout.scss';
 import '../styles/index.scss';
