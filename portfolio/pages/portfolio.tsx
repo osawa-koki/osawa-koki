@@ -2,7 +2,7 @@ import Date2String from '../common/Date';
 import Layout from '../components/Layout';
 import portfolio from '../data/portfolio';
 
-const AboutPage = () => (
+const PortfolioPage = () => (
   <Layout title="osawa's portfolio">
     <div id='Portfolio'>
       <h1>osawa's portfolio</h1>
@@ -32,4 +32,4 @@ const AboutPage = () => (
   </Layout>
 )
 
-export default AboutPage;
+export default PortfolioPage;
