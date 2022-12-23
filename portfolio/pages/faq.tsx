@@ -35,7 +35,7 @@ const FaqPage = () => {
           return (
             <div className='FaqUnit' key={f.id}>
               <Button
-                className='FaqAnswer'
+                className='FaqQuestion'
                 variant="outline-primary"
                 onClick={() => {
                   const new_open = faqs.map((o, _) => {
@@ -60,10 +60,13 @@ const FaqPage = () => {
                 {f.question}
               </Button>
               <Collapse in={f.open}>
-                <div className='answer'>
-                  {f.answer}
-                  <br />
-                  {f.detail}
+                <div className='answer-detail'>
+                  <div className='answer'>
+                    {f.answer}
+                  </div>
+                  <div className='detail'>
+                    {f.detail}
+                  </div>
                 </div>
               </Collapse>
             </div>

@@ -6,9 +6,20 @@
     margin-top: 3rem;
     border-bottom: 1px lightgray solid;
     padding-bottom: 3rem;
-    .FaqAnswer {
+    .FaqQuestion {
       width: 100%;
       text-align: left;
+    }
+    .answer-detail {
+      margin-top: 1rem;
+      .answer {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+      }
+      .detail {
+        white-space: pre;
+      }
     }
   }
 }
