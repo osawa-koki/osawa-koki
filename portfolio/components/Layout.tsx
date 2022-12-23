@@ -22,6 +22,8 @@ const Layout = ({ children, title = default_title }: Props) => (
         <Link href="/about">About</Link>
         <Link href="/portfolio">Portfolio</Link>
         <Link href="/resume">Resume</Link>
+        <Link href="/skill">Skill</Link>
+        <Link href="/faq">FAQ</Link>
         <Link href="/contact">Contact</Link>
       </nav>
     </header>
