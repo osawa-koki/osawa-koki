@@ -31,8 +31,12 @@ type Tech =
   | "Rust"
   | "Swift"
   | "Kotlin"
-  | "SQL"
-  | "NoSQL"
+  // Database
+  | "MySQL"
+  | "PostgreSQL"
+  | "SQLite"
+  | "MongoDB"
+  | "SQL Server"
   | "Nginx"
   | "Machine Learning"
   | "AI"
@@ -62,7 +66,7 @@ const portfolio: Portfolio[] = [
     description: "Webサイトをクローリングして404ページを検出するツール。",
     repo_url: "https://github.com/osawa-koki/404Finder",
     created_at: new Date("2022-09-05"),
-    tech_used: ["C#", "SQL"],
+    tech_used: ["C#", "SQL Server"],
     recommend: 1,
   },
   {
@@ -142,7 +146,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/simple-quiz-org",
     production_url: "https://simple-quiz.org/",
     created_at: new Date("2021-12-15"),
-    tech_used: ["TypeScript", "Next.js", "C#", "SQL", "Docker", "Nginx"],
+    tech_used: ["TypeScript", "Next.js", "C#", "SQL Server", "Docker", "Nginx"],
     recommend: 5,
   },
   {
@@ -153,6 +157,24 @@ const portfolio: Portfolio[] = [
     tech_used: ["Python", "scikit-learn", "Keras", "Anaconda", "Docker"],
     recommend: 3,
   },
+  {
+    name: "情報処理安産確保支援士試験対策サイト(2022)",
+    description: "2022年版の情報処理安産確保支援士試験対策サイト。",
+    repo_url: "https://github.com/osawa-koki/SC2022",
+    production_url: "https://osawa-koki.github.io/SC2022/",
+    created_at: new Date("2022-12-24"),
+    tech_used: ["TypeScript", "Next.js"],
+    recommend: 4,
+  },
+  {
+    name: "koko-campus.net",
+    description: "ITに関する総合学習サイト。",
+    repo_url: "https://github.com/osawa-koki/koko-campus.net",
+    production_url: "https://koko-campus.net/",
+    created_at: new Date("2021-12-15"),
+    tech_used: ["HTML&CSS", "JavaScript", "Go", "MySQL", "Docker", "Nginx"],
+    recommend: 2,
+  }
 ];
 
 export default portfolio.sort((a, b) => b.recommend - a.recommend);
