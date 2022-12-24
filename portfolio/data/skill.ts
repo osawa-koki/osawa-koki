@@ -83,7 +83,7 @@ const _skill_database = _skill.filter((s) => s.category === "Database");
 const _skill_os = _skill.filter((s) => s.category === "OS");
 const _skill_cloud = _skill.filter((s) => s.category === "Cloud");
 
-const color = 'skyblue';
+const color = '#0e6efe75';
 
 const skill_frontend: ChartData = {
   labels: _skill_frontend.map((s) => s.name),
