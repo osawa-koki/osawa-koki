@@ -18,17 +18,15 @@ const options = {
       display: false,
     },
   },
-  // scales: {
-  //   yAxes: [
-  //     {
-  //       ticks: {
-  //         callback: function(value: number, _a: any, _b: any) {
-  //           return `${value}(h)`;
-  //         },
-  //       },
-  //     },
-  //   ]
-  // },
+  scales: {
+    y: {
+      ticks: {
+        callback: function(value: number, _: any) {
+          return `${value} h`;
+        },
+      },
+    },
+  },
 };
 
 const SkillPage = () => (
