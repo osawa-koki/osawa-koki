@@ -5,6 +5,7 @@ type SkillCategory =
   | 'Database'
   | 'OS'
   | 'Cloud'
+  | 'Service'
 
 type ChartData = {
   labels: string[];
@@ -54,6 +55,8 @@ const _skill: DataFormat[] = [
   { name: "Erlang", hours: 5, category: "Backend" },
   { name: "Scala", hours: 5, category: "Backend" },
   { name: "Swift", hours: 5, category: "Backend" },
+  { name: "Powershell", hours: 25, category: "Backend" },
+  { name: "Bash", hours: 25, category: "Backend" },
 
   // Database
   { name: "MySQL", hours: 50, category: "Database" },
@@ -75,6 +78,13 @@ const _skill: DataFormat[] = [
   { name: "GCP", hours: 15, category: "Cloud" },
   { name: "Heroku", hours: 15, category: "Cloud" },
   { name: "Render", hours: 15, category: "Cloud" },
+
+  // Service
+  { name: "GitHub", hours: 100, category: "Service" },
+  { name: "Apache", hours: 50, category: "Service" },
+  { name: "Nginx", hours: 50, category: "Service" },
+  { name: "Docker", hours: 50, category: "Service" },
+  
 ];
 
 const _skill_frontend = _skill.filter((s) => s.category === "Frontend");
