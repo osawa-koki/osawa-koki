@@ -12,6 +12,14 @@ ChartJS.register(
 );
 defaults.font.family = 'Consolas';
 
+const options = {
+  plugins: {
+    legend: {
+      display: false,
+    },
+  },
+};
+
 const SkillPage = () => (
   <Layout title="osawa's skills">
     <div id='Skill'>
@@ -20,13 +28,15 @@ const SkillPage = () => (
         <Bar
           className='chart'
           data={skill_frontend}
-        />
+          options={options}
+          />
       </div>
       <div className='skillUnit'>
         <h2>Backend</h2>
         <Bar
           className='chart'
           data={skill_backend}
+          options={options}
         />
       </div>
     </div>

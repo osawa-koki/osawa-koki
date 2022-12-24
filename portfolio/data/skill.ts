@@ -32,6 +32,8 @@ const _skill: DataFormat[] = [
   { name: "Next.js", hours: 50, category: "Frontend" },
   { name: "Vue.js", hours: 20, category: "Frontend" },
   { name: "Nuxt.js", hours: 20, category: "Frontend" },
+  { name: "Angular", hours: 5, category: "Frontend" },
+  { name: "elm", hours: 10, category: "Frontend" },
 
   // Backend
   { name: "Node.js", hours: 30, category: "Backend" },
