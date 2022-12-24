@@ -5,7 +5,7 @@ import {
 import { Bar } from 'react-chartjs-2';
 import { defaults } from 'chart.js';
 import Layout from '../components/Layout';
-import { skill_frontend, skill_backend, skill_database, skill_os, skill_cloud } from '../data/skill';
+import { skill_frontend, skill_backend, skill_database, skill_os, skill_cloud, skill_service } from '../data/skill';
 
 ChartJS.register(
   ...registerables,
@@ -69,6 +69,14 @@ const SkillPage = () => (
         <Bar
           className='chart'
           data={skill_cloud}
+          options={options}
+        />
+      </div>
+      <div className='skillUnit'>
+        <h2>Service</h2>
+        <Bar
+          className='chart'
+          data={skill_service}
           options={options}
         />
       </div>

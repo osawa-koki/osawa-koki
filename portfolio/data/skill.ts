@@ -65,11 +65,13 @@ const _skill: DataFormat[] = [
   { name: "SQLite", hours: 40, category: "Database" },
   { name: "PostgreSQL", hours: 20, category: "Database" },
   { name: "MongoDB", hours: 5, category: "Database" },
+  { name: "h2", hours: 5, category: "Database" },
 
   // OS
-  { name: "Ubuntu(Linux)", hours: 20, category: "OS" },
+  { name: "Ubuntu(Linux)", hours: 50, category: "OS" },
   { name: "Debian(Linux)", hours: 10, category: "OS" },
-  { name: "Windows", hours: 100, category: "OS" },
+  { name: "CentOS(Linux)", hours: 10, category: "OS" },
+  { name: "Windows", hours: 300, category: "OS" },
   { name: "MacOS", hours: 3, category: "OS" },
 
   // Cloud
@@ -80,11 +82,14 @@ const _skill: DataFormat[] = [
   { name: "Render", hours: 15, category: "Cloud" },
 
   // Service
-  { name: "GitHub", hours: 100, category: "Service" },
+  { name: "GitHub", hours: 200, category: "Service" },
   { name: "Apache", hours: 50, category: "Service" },
-  { name: "Nginx", hours: 50, category: "Service" },
+  { name: "Nginx", hours: 70, category: "Service" },
   { name: "Docker", hours: 50, category: "Service" },
-  
+  { name: "Figma", hours: 5, category: "Service" },
+  { name: "Inkscape", hours: 50, category: "Service" },
+  { name: "Microsoft Office", hours: 10, category: "Service" },
+  { name: "Libre Office", hours: 20, category: "Service" },
 ];
 
 const _skill_frontend = _skill.filter((s) => s.category === "Frontend");
@@ -92,6 +97,7 @@ const _skill_backend = _skill.filter((s) => s.category === "Backend");
 const _skill_database = _skill.filter((s) => s.category === "Database");
 const _skill_os = _skill.filter((s) => s.category === "OS");
 const _skill_cloud = _skill.filter((s) => s.category === "Cloud");
+const _skill_service = _skill.filter((s) => s.category === "Service");
 
 const color = '#0e6efe75';
 
@@ -160,4 +166,17 @@ const skill_cloud: ChartData = {
   ],
 };
 
-export { skill_frontend, skill_backend, skill_database, skill_os, skill_cloud };
+const skill_service: ChartData = {
+  labels: _skill_service.map((s) => s.name),
+  datasets: [
+    {
+      label: "Service",
+      data: _skill_service.map((s) => s.hours),
+      borderWidth: 1,
+      borderColor: color,
+      backgroundColor: color,
+    },
+  ],
+};
+
+export { skill_frontend, skill_backend, skill_database, skill_os, skill_cloud, skill_service };
