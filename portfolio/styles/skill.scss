@@ -2,4 +2,12 @@
 #Skill {
   max-width: 1200px;
   margin: 0 auto;
+  .skillUnit {
+    h2 {
+      margin-top: 3rem;
+    }
+    .chart {
+      max-height: 300px;
+    }
+  }
 }
