@@ -37,7 +37,7 @@ const _faq: _Faq[] = [
 
 const faq: Faq[] = _faq.map((faq, index) => ({
   id: index,
-  ...faq
+  ...faq,
 }));
 
 export { faq };
