@@ -25,6 +25,8 @@ type Tech =
   | "PHP"
   | "Go"
   | "C#"
+  | "VB.NET"
+  | "VBA"
   | "C"
   | "C++"
   | "Java"
@@ -174,7 +176,23 @@ const portfolio: Portfolio[] = [
     created_at: new Date("2021-12-15"),
     tech_used: ["HTML&CSS", "JavaScript", "Go", "MySQL", "Docker", "Nginx"],
     recommend: 2,
-  }
+  },
+  {
+    name: "img2excel",
+    description: "C#で実装した画像のピクセルデータから、Excelのセルの背景色を着色するお遊びツール。",
+    repo_url: "https://github.com/osawa-koki/img2excel",
+    created_at: new Date("2021-11-20"),
+    tech_used: ["C#"],
+    recommend: 2,
+  },
+  {
+    name: "img2excel.macro",
+    description: "Excelマクロで実装した画像のピクセルデータから、Excelのセルの背景色を着色するお遊びツール。",
+    repo_url: "https://github.com/osawa-koki/img2excel.macro",
+    created_at: new Date("2021-11-22"),
+    tech_used: ["VBA"],
+    recommend: 2,
+  },
 ];
 
 export default portfolio.sort((a, b) => b.recommend - a.recommend);
