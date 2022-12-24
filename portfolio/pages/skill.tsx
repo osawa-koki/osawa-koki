@@ -39,6 +39,30 @@ const SkillPage = () => (
           options={options}
         />
       </div>
+      <div className='skillUnit'>
+        <h2>Database</h2>
+        <Bar
+          className='chart'
+          data={skill_database}
+          options={options}
+        />
+      </div>
+      <div className='skillUnit'>
+        <h2>OS</h2>
+        <Bar
+          className='chart'
+          data={skill_os}
+          options={options}
+        />
+      </div>
+      <div className='skillUnit'>
+        <h2>Cloud</h2>
+        <Bar
+          className='chart'
+          data={skill_cloud}
+          options={options}
+        />
+      </div>
     </div>
   </Layout>
 )

@@ -34,19 +34,20 @@ const _skill: DataFormat[] = [
   { name: "Nuxt.js", hours: 20, category: "Frontend" },
   { name: "Angular", hours: 5, category: "Frontend" },
   { name: "elm", hours: 10, category: "Frontend" },
+  { name: "JQuery", hours: 10, category: "Frontend" },
 
   // Backend
-  { name: "Node.js", hours: 30, category: "Backend" },
-  { name: "Python", hours: 20, category: "Backend" },
+  { name: "Node.js", hours: 70, category: "Backend" },
+  { name: "Python", hours: 100, category: "Backend" },
   { name: "Ruby", hours: 20, category: "Backend" },
   { name: "Perl", hours: 5, category: "Backend" },
-  { name: "PHP", hours: 50, category: "Backend" },
+  { name: "PHP", hours: 70, category: "Backend" },
   { name: "Java", hours: 20, category: "Backend" },
   { name: "Kotlin", hours: 25, category: "Backend" },
   { name: "C#", hours: 100, category: "Backend" },
   { name: "C", hours: 5, category: "Backend"},
   { name: "C++", hours: 5, category: "Backend" },
-  { name: "Go", hours: 25, category: "Backend" },
+  { name: "Go", hours: 35, category: "Backend" },
   { name: "Rust", hours: 15, category: "Backend" },
   { name: "Dart", hours: 5, category: "Backend" },
   { name: "Elixir", hours: 5, category: "Backend" },
@@ -56,16 +57,24 @@ const _skill: DataFormat[] = [
 
   // Database
   { name: "MySQL", hours: 50, category: "Database" },
+  { name: "mariaDB", hours: 10, category: "Database" },
+  { name: "SQL Server", hours: 50, category: "Database" },
+  { name: "SQLite", hours: 40, category: "Database" },
   { name: "PostgreSQL", hours: 20, category: "Database" },
   { name: "MongoDB", hours: 5, category: "Database" },
 
   // OS
-  { name: "Linux", hours: 20, category: "OS" },
+  { name: "Ubuntu(Linux)", hours: 20, category: "OS" },
+  { name: "Debian(Linux)", hours: 10, category: "OS" },
   { name: "Windows", hours: 100, category: "OS" },
+  { name: "MacOS", hours: 3, category: "OS" },
 
   // Cloud
+  { name: "Azure", hours: 5, category: "Cloud" },
   { name: "AWS", hours: 5, category: "Cloud" },
-  { name: "GCP", hours: 5, category: "Cloud" },
+  { name: "GCP", hours: 15, category: "Cloud" },
+  { name: "Heroku", hours: 15, category: "Cloud" },
+  { name: "Render", hours: 15, category: "Cloud" },
 ];
 
 const _skill_frontend = _skill.filter((s) => s.category === "Frontend");
@@ -74,7 +83,7 @@ const _skill_database = _skill.filter((s) => s.category === "Database");
 const _skill_os = _skill.filter((s) => s.category === "OS");
 const _skill_cloud = _skill.filter((s) => s.category === "Cloud");
 
-const color = '#0E6DFE';
+const color = 'skyblue';
 
 const skill_frontend: ChartData = {
   labels: _skill_frontend.map((s) => s.name),
