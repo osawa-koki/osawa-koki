@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  #MyIcon {
+    width: 100px;
+    border-radius: 50%;
+    border: 1px lightgray solid;
+  }
   table {
     width: 500px;
     max-width: 100%;
