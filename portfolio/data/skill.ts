@@ -46,6 +46,8 @@ const _skill: DataFormat[] = [
   { name: "Java", hours: 20, category: "Backend" },
   { name: "Kotlin", hours: 25, category: "Backend" },
   { name: "C#", hours: 100, category: "Backend" },
+  { name: "VB.NET", hours: 35, category: "Backend" },
+  { name: "F#", hours: 5, category: "Backend" },
   { name: "C", hours: 5, category: "Backend"},
   { name: "C++", hours: 5, category: "Backend" },
   { name: "Go", hours: 35, category: "Backend" },
@@ -53,10 +55,13 @@ const _skill: DataFormat[] = [
   { name: "Dart", hours: 5, category: "Backend" },
   { name: "Elixir", hours: 5, category: "Backend" },
   { name: "Erlang", hours: 5, category: "Backend" },
-  { name: "Scala", hours: 5, category: "Backend" },
   { name: "Swift", hours: 5, category: "Backend" },
   { name: "Powershell", hours: 25, category: "Backend" },
   { name: "Bash", hours: 25, category: "Backend" },
+  { name: "Haskell", hours: 50, category: "Backend" },
+  { name: "Scala", hours: 5, category: "Backend" },
+  { name: "Ocaml", hours: 15, category: "Backend" },
+  { name: "Clojure", hours: 5, category: "Backend" },
 
   // Database
   { name: "MySQL", hours: 50, category: "Database" },
