@@ -12,6 +12,14 @@ type Tech =
   // Python
   | "Python"
   | "FastAPI"
+  | "numpy"
+  | "scipy"
+  | "matplotlib"
+  | "TensorFlow"
+  | "scikit-learn"
+  | "Keras"
+  | "Anaconda"
+  | "pandas"
   | "Ruby"
   | "Perl"
   | "PHP"
@@ -26,6 +34,8 @@ type Tech =
   | "SQL"
   | "NoSQL"
   | "Nginx"
+  | "Machine Learning"
+  | "AI"
 
 type Portfolio = {
   name: string;
@@ -123,7 +133,7 @@ const portfolio: Portfolio[] = [
     description: "LinuxをGUIで操作するためのツール。",
     repo_url: "https://github.com/osawa-koki/gui-on-linux",
     created_at: new Date("2021-12-15"),
-    tech_used: ["Python", "FastAPI", "Docker"],
+    tech_used: ["Python", "FastAPI", "Next.js", "Nginx", "Docker"],
     recommend: 2,
   },
   {
@@ -134,6 +144,14 @@ const portfolio: Portfolio[] = [
     created_at: new Date("2021-12-15"),
     tech_used: ["TypeScript", "Next.js", "C#", "SQL", "Docker", "Nginx"],
     recommend: 5,
+  },
+  {
+    name: "猿・猪・烏 判定AI",
+    description: "猿・猪・烏の画像を判定するAI。",
+    repo_url: "https://github.com/osawa-koki/startup-TensorFlow_Keras.py",
+    created_at: new Date("2021-10-23"),
+    tech_used: ["Python", "scikit-learn", "Keras", "Anaconda", "Docker"],
+    recommend: 3,
   },
 ];
 
