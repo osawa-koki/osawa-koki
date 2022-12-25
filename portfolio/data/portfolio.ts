@@ -196,6 +196,15 @@ const portfolio: Portfolio[] = [
     tech_used: ["VBA"],
     recommend: 2,
   },
+  {
+    name: "データベーススペシャリスト試験対策サイト(2023)",
+    description: "2022年版のデータベーススペシャリスト試験対策サイト。",
+    repo_url: "https://github.com/osawa-koki/DB2023",
+    production_url: "https://osawa-koki.github.io/DB2023/",
+    created_at: new Date("2022-12-26"),
+    tech_used: ["HTML&CSS", "Hugo"],
+    recommend: 4,
+  },
 ];
 
 export default portfolio.sort((a, b) => b.recommend - a.recommend);
