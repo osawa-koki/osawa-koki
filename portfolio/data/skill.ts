@@ -87,6 +87,7 @@ const _skill: DataFormat[] = [
   { name: "Render", hours: 15, category: "Cloud" },
 
   // Service
+  { name: "Git", hours: 200, category: "Service" },
   { name: "GitHub", hours: 200, category: "Service" },
   { name: "Apache", hours: 50, category: "Service" },
   { name: "Nginx", hours: 70, category: "Service" },
@@ -95,6 +96,7 @@ const _skill: DataFormat[] = [
   { name: "Inkscape", hours: 50, category: "Service" },
   { name: "Microsoft Office", hours: 10, category: "Service" },
   { name: "Libre Office", hours: 20, category: "Service" },
+  { name: "Hugo", hours: 25, category: "Service" },
 ];
 
 const _skill_frontend = _skill.filter((s) => s.category === "Frontend");

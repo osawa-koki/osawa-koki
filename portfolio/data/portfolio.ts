@@ -8,7 +8,6 @@ type Tech =
   | "Next.js"
   | "Vue.js"
   | "Nuxt.js"
-  | "Docker"
   // Python
   | "Python"
   | "FastAPI"
@@ -25,6 +24,8 @@ type Tech =
   | "PHP"
   | "Go"
   | "C#"
+  | "VB.NET"
+  | "VBA"
   | "C"
   | "C++"
   | "Java"
@@ -37,7 +38,11 @@ type Tech =
   | "SQLite"
   | "MongoDB"
   | "SQL Server"
+  | "Apache"
   | "Nginx"
+  | "Docker"
+  | "Hugo"
+  | "Gatsby.js"
   | "Machine Learning"
   | "AI"
 
@@ -174,7 +179,32 @@ const portfolio: Portfolio[] = [
     created_at: new Date("2021-12-15"),
     tech_used: ["HTML&CSS", "JavaScript", "Go", "MySQL", "Docker", "Nginx"],
     recommend: 2,
-  }
+  },
+  {
+    name: "img2excel",
+    description: "C#で実装した画像のピクセルデータから、Excelのセルの背景色を着色するお遊びツール。",
+    repo_url: "https://github.com/osawa-koki/img2excel",
+    created_at: new Date("2021-11-20"),
+    tech_used: ["C#"],
+    recommend: 2,
+  },
+  {
+    name: "img2excel.macro",
+    description: "Excelマクロで実装した画像のピクセルデータから、Excelのセルの背景色を着色するお遊びツール。",
+    repo_url: "https://github.com/osawa-koki/img2excel.macro",
+    created_at: new Date("2021-11-22"),
+    tech_used: ["VBA"],
+    recommend: 2,
+  },
+  {
+    name: "データベーススペシャリスト試験対策サイト(2023)",
+    description: "2022年版のデータベーススペシャリスト試験対策サイト。",
+    repo_url: "https://github.com/osawa-koki/DB2023",
+    production_url: "https://osawa-koki.github.io/DB2023/",
+    created_at: new Date("2022-12-26"),
+    tech_used: ["HTML&CSS", "Hugo"],
+    recommend: 4,
+  },
 ];
 
 export default portfolio.sort((a, b) => b.recommend - a.recommend);
