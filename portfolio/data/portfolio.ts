@@ -8,7 +8,6 @@ type Tech =
   | "Next.js"
   | "Vue.js"
   | "Nuxt.js"
-  | "Docker"
   // Python
   | "Python"
   | "FastAPI"
@@ -39,7 +38,11 @@ type Tech =
   | "SQLite"
   | "MongoDB"
   | "SQL Server"
+  | "Apache"
   | "Nginx"
+  | "Docker"
+  | "Hugo"
+  | "Gatsby.js"
   | "Machine Learning"
   | "AI"
 
