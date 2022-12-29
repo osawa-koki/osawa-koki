@@ -30,7 +30,7 @@ jobs:
     steps:
       - name: Checkout
         with:
-          working-directory: web
+          working-directory: portfolio
         uses: actions/checkout@v3
       - name: Detect package manager
         id: detect-package-manager
