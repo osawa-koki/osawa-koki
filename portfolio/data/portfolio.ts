@@ -49,6 +49,7 @@ type Tech =
   | "SignalR"
   | "Machine Learning"
   | "AI"
+  | "Bootstrap5"
 
 type Portfolio = {
   name: string;
@@ -111,7 +112,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/sorter-demo.ts",
     production_url: "https://osawa-koki.github.io/sorter-demo.ts/",
     created_at: new Date("2021-12-16"),
-    tech_used: ["TypeScript", "Next.js"],
+    tech_used: ["TypeScript", "Next.js", "Bootstrap5"],
     recommend: 5,
   },
   {
@@ -138,7 +139,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/fractal-drawer.ts",
     production_url: "https://osawa-koki.github.io/fractal-drawer.ts/",
     created_at: new Date("2021-12-15"),
-    tech_used: ["TypeScript", "Next.js"],
+    tech_used: ["TypeScript", "Next.js", "Bootstrap5"],
     recommend: 5,
   },
   {
@@ -155,7 +156,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/simple-quiz-org",
     production_url: "https://simple-quiz.org/",
     created_at: new Date("2021-12-15"),
-    tech_used: ["TypeScript", "Next.js", "C#", "SQL Server", "Docker", "Nginx"],
+    tech_used: ["TypeScript", "Next.js", "Bootstrap5", "C#", "SQL Server", "Docker", "Nginx"],
     recommend: 5,
   },
   {
@@ -172,7 +173,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/SC2022",
     production_url: "https://osawa-koki.github.io/SC2022/",
     created_at: new Date("2022-12-24"),
-    tech_used: ["TypeScript", "Next.js"],
+    tech_used: ["TypeScript", "Next.js", "Bootstrap5"],
     recommend: 4,
   },
   {
@@ -213,9 +214,27 @@ const portfolio: Portfolio[] = [
     name: "ShellConnected",
     description: "WebSocketで実装したリアルタイム対話型のダブルクライアントサーバシステム。",
     repo_url: "https://github.com/osawa-koki/ShellConnected",
-    production_url: "https://shellconnected.onrender.com/index.html",
+    production_url: "https://shellconnected.onrender.com/",
     created_at: new Date("2022-12-28"),
-    tech_used: ["Next.js", "C#", "WebSocket", "SignalR", "Docker"],
+    tech_used: ["Next.js", "Bootstrap5", "C#", "WebSocket", "SignalR", "Docker"],
+    recommend: 4,
+  },
+  {
+    name: "Web-Host-Stat",
+    description: "名前解決やポートスキャンを行うWebアプリケーション。",
+    repo_url: "https://github.com/osawa-koki/web-host-stat",
+    production_url: "https://web-host-stat.onrender.com/",
+    created_at: new Date("2022-12-28"),
+    tech_used: ["Next.js", "Bootstrap5", "Go", "Docker"],
+    recommend: 4,
+  },
+  {
+    name: "img2excel-server",
+    description: "画像のピクセルデータから、Excelのセルの背景色を着色するお遊びツールのサーバサイド版。",
+    repo_url: "https://github.com/osawa-koki/img2excel-server",
+    production_url: "https://img2excel.onrender.com/",
+    created_at: new Date("2022-12-29"),
+    tech_used: ["Nuxt.js", "Bootstrap5", "C#", "Docker"],
     recommend: 4,
   },
 ];
