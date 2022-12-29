@@ -29,8 +29,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
+        with:
+          working-directory: web
         uses: actions/checkout@v3
-        working-directory: ./portfolio
       - name: Detect package manager
         id: detect-package-manager
         run: |
