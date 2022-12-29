@@ -50,7 +50,7 @@ jobs:
             exit 1
           fi
         with:
-          working-directory: portfolio
+          working-directory: ./portfolio
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -77,20 +77,20 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         with:
-          working-directory: portfolio
+          working-directory: ./portfolio
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
         with:
-          working-directory: portfolio
+          working-directory: ./portfolio
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
         with:
-          working-directory: portfolio
+          working-directory: ./portfolio
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist
-          working-directory: portfolio
+          working-directory: ./portfolio
 
   # Deployment job
   deploy:
