@@ -43,6 +43,10 @@ type Tech =
   | "Docker"
   | "Hugo"
   | "Gatsby.js"
+  | "WebSocket"
+  | "GraphQL"
+  | "REST API"
+  | "SignalR"
   | "Machine Learning"
   | "AI"
 
@@ -203,6 +207,15 @@ const portfolio: Portfolio[] = [
     production_url: "https://osawa-koki.github.io/DB2023/",
     created_at: new Date("2022-12-26"),
     tech_used: ["HTML&CSS", "Hugo"],
+    recommend: 4,
+  },
+  {
+    name: "ShellConnected",
+    description: "WebSocketで実装したリアルタイム対話型のダブルクライアントサーバシステム。",
+    repo_url: "https://github.com/osawa-koki/ShellConnected",
+    production_url: "https://shellconnected.onrender.com/index.html",
+    created_at: new Date("2022-12-28"),
+    tech_used: ["Next.js", "C#", "WebSocket", "SignalR", "Docker"],
     recommend: 4,
   },
 ];
