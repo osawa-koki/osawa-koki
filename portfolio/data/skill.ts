@@ -92,6 +92,7 @@ const _skill: DataFormat[] = [
   { name: "Apache", hours: 50, category: "Service" },
   { name: "Nginx", hours: 70, category: "Service" },
   { name: "Docker", hours: 50, category: "Service" },
+  { name: "Bootstrap5", hours: 25, category: "Service" },
   { name: "Figma", hours: 5, category: "Service" },
   { name: "Inkscape", hours: 50, category: "Service" },
   { name: "Microsoft Office", hours: 10, category: "Service" },
