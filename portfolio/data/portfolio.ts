@@ -49,7 +49,8 @@ type Tech =
   | "SignalR"
   | "Machine Learning"
   | "AI"
-  | "Bootstrap5"
+  | "Bootstrap"
+  | "Material UI"
 
 type Portfolio = {
   name: string;
@@ -59,6 +60,7 @@ type Portfolio = {
   created_at: Date;
   tech_used: Tech[];
   recommend: 1 | 2 | 3 | 4 | 5; // 1: Not recommended, 5: Highly recommended
+  in_development?: boolean;
 }
 
 const portfolio: Portfolio[] = [
@@ -86,7 +88,7 @@ const portfolio: Portfolio[] = [
     production_url: "https://osawa-koki.github.io/bezier-maker.js/",
     created_at: new Date("2021-09-03"),
     tech_used: ["HTML&CSS", "JavaScript"],
-    recommend: 3,
+    recommend: 2,
   },
   {
     name: "特殊文字コピーサイト",
@@ -112,7 +114,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/sorter-demo.ts",
     production_url: "https://osawa-koki.github.io/sorter-demo.ts/",
     created_at: new Date("2021-12-16"),
-    tech_used: ["TypeScript", "Next.js", "Bootstrap5"],
+    tech_used: ["TypeScript", "Next.js", "Bootstrap"],
     recommend: 5,
   },
   {
@@ -139,7 +141,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/fractal-drawer.ts",
     production_url: "https://osawa-koki.github.io/fractal-drawer.ts/",
     created_at: new Date("2021-12-15"),
-    tech_used: ["TypeScript", "Next.js", "Bootstrap5"],
+    tech_used: ["TypeScript", "Next.js", "Bootstrap"],
     recommend: 5,
   },
   {
@@ -149,6 +151,7 @@ const portfolio: Portfolio[] = [
     created_at: new Date("2021-12-15"),
     tech_used: ["Python", "FastAPI", "Next.js", "Nginx", "Docker"],
     recommend: 2,
+    in_development: true,
   },
   {
     name: "Simple Quiz",
@@ -156,8 +159,9 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/simple-quiz-org",
     production_url: "https://simple-quiz.org/",
     created_at: new Date("2021-12-15"),
-    tech_used: ["TypeScript", "Next.js", "Bootstrap5", "C#", "SQL Server", "Docker", "Nginx"],
+    tech_used: ["TypeScript", "Next.js", "Bootstrap", "C#", "SQL Server", "Docker", "Nginx"],
     recommend: 5,
+    in_development: true,
   },
   {
     name: "猿・猪・烏 判定AI",
@@ -173,7 +177,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/SC2022",
     production_url: "https://osawa-koki.github.io/SC2022/",
     created_at: new Date("2022-12-24"),
-    tech_used: ["TypeScript", "Next.js", "Bootstrap5"],
+    tech_used: ["TypeScript", "Next.js", "Bootstrap"],
     recommend: 4,
   },
   {
@@ -184,6 +188,15 @@ const portfolio: Portfolio[] = [
     created_at: new Date("2021-12-15"),
     tech_used: ["HTML&CSS", "JavaScript", "Go", "MySQL", "Docker", "Nginx"],
     recommend: 2,
+  },
+  {
+    name: "octo-campus",
+    description: "ITに関する総合学習サイト。",
+    repo_url: "https://github.com/osawa-koki/octo-campus",
+    production_url: "https://osawa-koki.github.io/octo-campus/",
+    created_at: new Date("2021-12-15"),
+    tech_used: ["Gatsby.js", "Bootstrap"],
+    recommend: 3,
   },
   {
     name: "img2excel",
@@ -216,8 +229,9 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/ShellConnected",
     production_url: "https://shellconnected.onrender.com/",
     created_at: new Date("2022-12-28"),
-    tech_used: ["Next.js", "Bootstrap5", "C#", "WebSocket", "SignalR", "Docker"],
+    tech_used: ["Next.js", "Bootstrap", "C#", "WebSocket", "SignalR", "Docker"],
     recommend: 4,
+    in_development: true,
   },
   {
     name: "Web-Host-Stat",
@@ -225,7 +239,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/web-host-stat",
     production_url: "https://web-host-stat.onrender.com/",
     created_at: new Date("2022-12-28"),
-    tech_used: ["Next.js", "Bootstrap5", "Go", "Docker"],
+    tech_used: ["Next.js", "Bootstrap", "Go", "Docker"],
     recommend: 4,
   },
   {
@@ -234,9 +248,20 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/img2excel-server",
     production_url: "https://img2excel.onrender.com/",
     created_at: new Date("2022-12-29"),
-    tech_used: ["Nuxt.js", "Bootstrap5", "C#", "Docker"],
-    recommend: 4,
+    tech_used: ["Next.js", "Bootstrap", "Material UI", "C#", "Docker"],
+    recommend: 5,
   },
 ];
 
-export default portfolio.sort((a, b) => b.recommend - a.recommend);
+export default portfolio.sort((a, b) => {
+  // 開発中のものを最後にする
+  if (a.in_development && !b.in_development) return 1;
+  if (!a.in_development && b.in_development) return -1;
+
+  // それ以外はオススメ度でソート
+  if (a.recommend === b.recommend) {
+    // (同じオススメ度の場合は作成日時でソート)
+    return a.created_at > b.created_at ? -1 : 1;
+  }
+  return a.recommend > b.recommend ? -1 : 1;
+});
