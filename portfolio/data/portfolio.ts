@@ -22,6 +22,8 @@ type Tech =
   | "Ruby"
   | "Perl"
   | "PHP"
+  | "PowerShell"
+  | "ShellScript"
   | "Go"
   | "C#"
   | "VB.NET"
@@ -170,6 +172,22 @@ const portfolio: Portfolio[] = [
     created_at: new Date("2021-10-23"),
     tech_used: ["Python", "scikit-learn", "Keras", "Anaconda", "Docker"],
     recommend: 3,
+  },
+  {
+    name: "ps1-games",
+    description: "PowerShellで動作する簡単なゲーム。",
+    repo_url: "https://github.com/osawa-koki/ps1-games",
+    created_at: new Date("2021-11-17"),
+    tech_used: ["PowerShell", "Docker"],
+    recommend: 2,
+  },
+  {
+    name: "bash-games",
+    description: "ShellScript(bash)で動作する簡単なゲーム。",
+    repo_url: "https://github.com/osawa-koki/bash-games",
+    created_at: new Date("2021-11-21"),
+    tech_used: ["ShellScript", "Docker"],
+    recommend: 2,
   },
   {
     name: "情報処理安産確保支援士試験対策サイト(2022)",
