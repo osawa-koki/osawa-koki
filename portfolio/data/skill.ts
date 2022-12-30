@@ -28,7 +28,7 @@ const _skill: DataFormat[] = [
   // Frontend
   { name: "HTML&CSS", hours: 200, category: "Frontend" },
   { name: "JavaScript", hours: 80, category: "Frontend" },
-  { name: "TypeScript", hours: 120, category: "Frontend" },
+  { name: "TypeScript", hours: 150, category: "Frontend" },
   { name: "React", hours: 50, category: "Frontend" },
   { name: "Next.js", hours: 50, category: "Frontend" },
   { name: "Vue.js", hours: 20, category: "Frontend" },
@@ -38,14 +38,14 @@ const _skill: DataFormat[] = [
   { name: "JQuery", hours: 10, category: "Frontend" },
 
   // Backend
-  { name: "Node.js", hours: 70, category: "Backend" },
-  { name: "Python", hours: 100, category: "Backend" },
+  { name: "Node.js", hours: 120, category: "Backend" },
+  { name: "Python", hours: 80, category: "Backend" },
   { name: "Ruby", hours: 20, category: "Backend" },
   { name: "Perl", hours: 5, category: "Backend" },
   { name: "PHP", hours: 70, category: "Backend" },
   { name: "Java", hours: 20, category: "Backend" },
   { name: "Kotlin", hours: 25, category: "Backend" },
-  { name: "C#", hours: 100, category: "Backend" },
+  { name: "C#", hours: 120, category: "Backend" },
   { name: "VB.NET", hours: 35, category: "Backend" },
   { name: "F#", hours: 5, category: "Backend" },
   { name: "C", hours: 5, category: "Backend"},
