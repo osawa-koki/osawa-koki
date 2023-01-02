@@ -289,7 +289,7 @@ const portfolio: Portfolio[] = [
     name: "simple-chat-chat",
     description: "Firebase(Firestore)を使用して実装したチャットアプリ。",
     repo_url: "https://github.com/osawa-koki/simple-chat-chat",
-    production_url: "simple-chat-chat.web.app/chat/",
+    production_url: "https://simple-chat-chat.web.app/chat/",
     created_at: new Date("2023-01-03"),
     tech_used: ["Firebase", "Firestore", "Node.js", "Nuxt.js", "Bootstrap"],
     recommend: 5,
