@@ -1,5 +1,6 @@
 
 type Tech =
+  // Web Language
   | "HTML&CSS"
   | "JavaScript"
   | "TypeScript"
@@ -8,7 +9,7 @@ type Tech =
   | "Next.js"
   | "Vue.js"
   | "Nuxt.js"
-  // Python
+  // Script Language
   | "Python"
   | "FastAPI"
   | "numpy"
@@ -22,6 +23,9 @@ type Tech =
   | "Ruby"
   | "Perl"
   | "PHP"
+  | "PowerShell"
+  | "ShellScript"
+  // System Language
   | "Go"
   | "C#"
   | "VB.NET"
@@ -38,17 +42,31 @@ type Tech =
   | "SQLite"
   | "MongoDB"
   | "SQL Server"
+  | "Redis"
+  | "Oracle"
+  | "MariaDB"
+  | "Firestore"
+  // Web Server
   | "Apache"
   | "Nginx"
   | "Docker"
+  // SSG Framework
   | "Hugo"
   | "Gatsby.js"
   | "WebSocket"
   | "GraphQL"
+  // Cloud Service
+  | "AWS"
+  | "Azure"
+  | "GCP"
+  | "Firebase"
+  | "Firestore"
+  // Technology
   | "REST API"
   | "SignalR"
   | "Machine Learning"
   | "AI"
+  // UI
   | "Bootstrap"
   | "Material UI"
 
@@ -172,6 +190,22 @@ const portfolio: Portfolio[] = [
     recommend: 3,
   },
   {
+    name: "ps1-games",
+    description: "PowerShellで動作する簡単なゲーム。",
+    repo_url: "https://github.com/osawa-koki/ps1-games",
+    created_at: new Date("2021-11-17"),
+    tech_used: ["PowerShell", "Docker"],
+    recommend: 2,
+  },
+  {
+    name: "bash-games",
+    description: "ShellScript(bash)で動作する簡単なゲーム。",
+    repo_url: "https://github.com/osawa-koki/bash-games",
+    created_at: new Date("2021-11-21"),
+    tech_used: ["ShellScript", "Docker"],
+    recommend: 2,
+  },
+  {
     name: "情報処理安産確保支援士試験対策サイト(2022)",
     description: "2022年版の情報処理安産確保支援士試験対策サイト。",
     repo_url: "https://github.com/osawa-koki/SC2022",
@@ -249,6 +283,15 @@ const portfolio: Portfolio[] = [
     production_url: "https://img2excel.onrender.com/",
     created_at: new Date("2022-12-29"),
     tech_used: ["Next.js", "Bootstrap", "Material UI", "C#", "Docker"],
+    recommend: 5,
+  },
+  {
+    name: "simple-chat-chat",
+    description: "Firebase(Firestore)を使用して実装したチャットアプリ。",
+    repo_url: "https://github.com/osawa-koki/simple-chat-chat",
+    production_url: "simple-chat-chat.web.app/chat/",
+    created_at: new Date("2023-01-03"),
+    tech_used: ["Firebase", "Firestore", "Node.js", "Nuxt.js", "Bootstrap"],
     recommend: 5,
   },
 ];

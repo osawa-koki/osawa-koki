@@ -71,6 +71,8 @@ const _skill: DataFormat[] = [
   { name: "PostgreSQL", hours: 20, category: "Database" },
   { name: "MongoDB", hours: 5, category: "Database" },
   { name: "h2", hours: 5, category: "Database" },
+  { name: "Redis", hours: 5, category: "Database" },
+  { name: "Firebase", hours: 5, category: "Database" },
 
   // OS
   { name: "Ubuntu(Linux)", hours: 50, category: "OS" },
@@ -89,10 +91,13 @@ const _skill: DataFormat[] = [
   // Service
   { name: "Git", hours: 200, category: "Service" },
   { name: "GitHub", hours: 200, category: "Service" },
+  { name: "Firebase", hours: 10, category: "Service" },
   { name: "Apache", hours: 50, category: "Service" },
   { name: "Nginx", hours: 70, category: "Service" },
   { name: "Docker", hours: 50, category: "Service" },
   { name: "Bootstrap5", hours: 25, category: "Service" },
+  { name: "Material UI", hours: 5, category: "Service" },
+  { name: "Tailwind CSS", hours: 5, category: "Service" },
   { name: "Figma", hours: 5, category: "Service" },
   { name: "Inkscape", hours: 50, category: "Service" },
   { name: "Microsoft Office", hours: 10, category: "Service" },
