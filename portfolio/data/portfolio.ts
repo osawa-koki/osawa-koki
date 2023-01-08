@@ -310,6 +310,22 @@ const portfolio: Portfolio[] = [
     tech_used: ["C", "Docker"],
     recommend: 3,
   },
+  {
+    name: "mandelbrot.c",
+    description: "C言語でマンデルブロ集合を描写するプログラムを作成しました。",
+    repo_url: "https://github.com/osawa-koki/mandelbrot.c",
+    created_at: new Date("2023-01-09"),
+    tech_used: ["C", "Docker"],
+    recommend: 3,
+  },
+  {
+    name: "julia.c",
+    description: "C言語でジュリア集合を描写するプログラムを作成しました。",
+    repo_url: "https://github.com/osawa-koki/julia.c",
+    created_at: new Date("2023-01-09"),
+    tech_used: ["C", "Docker"],
+    recommend: 3,
+  },
 ];
 
 export default portfolio.sort((a, b) => {
