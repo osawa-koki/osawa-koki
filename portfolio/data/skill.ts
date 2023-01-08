@@ -92,6 +92,8 @@ const _skill: DataFormat[] = [
   { name: "Git", hours: 200, category: "Service" },
   { name: "GitHub", hours: 200, category: "Service" },
   { name: "Firebase", hours: 10, category: "Service" },
+  { name: "Cloud Build", hours: 10, category: "Service" },
+  { name: "Cloud Run", hours: 10, category: "Service" },
   { name: "Apache", hours: 50, category: "Service" },
   { name: "Nginx", hours: 70, category: "Service" },
   { name: "Docker", hours: 50, category: "Service" },

@@ -294,6 +294,22 @@ const portfolio: Portfolio[] = [
     tech_used: ["Firebase", "Firestore", "Node.js", "Nuxt.js", "Bootstrap"],
     recommend: 5,
   },
+  {
+    name: "sorting-algo-func.py",
+    description: "整列アルゴリズムを実装したPythonの関数群。",
+    repo_url: "https://github.com/osawa-koki/sorting-algo-func.py",
+    created_at: new Date("2023-01-09"),
+    tech_used: ["Python", "Docker"],
+    recommend: 3,
+  },
+  {
+    name: "sorting-algo-func.c",
+    description: "整列アルゴリズムを実装したC言語の関数群。",
+    repo_url: "https://github.com/osawa-koki/sorting-algo-func.c",
+    created_at: new Date("2023-01-09"),
+    tech_used: ["C", "Docker"],
+    recommend: 3,
+  },
 ];
 
 export default portfolio.sort((a, b) => {
