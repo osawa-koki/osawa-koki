@@ -69,6 +69,18 @@ type Tech =
   // UI
   | "Bootstrap"
   | "Material UI"
+  // Network
+  | "TCP/IP"
+  | "HTTP"
+  | "HTTPS"
+  | "DNS"
+  | "FTP"
+  | "SSH"
+  | "SMTP"
+  | "POP3"
+  | "IMAP"
+  | "SFTP"
+  | "VPN"
 
 type Portfolio = {
   name: string;
@@ -324,6 +336,14 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/julia.c",
     created_at: new Date("2023-01-09"),
     tech_used: ["C", "Docker"],
+    recommend: 3,
+  },
+  {
+    name: "TCP-client-server.c",
+    description: "C++でTCPクライアントとTCPサーバの通信を行うプログラムを作成しました🐆🐆🐆",
+    repo_url: "https://github.com/osawa-koki/julia.c",
+    created_at: new Date("2023-01-09"),
+    tech_used: ["C++", "Docker", "TCP/IP"],
     recommend: 3,
   },
 ];
