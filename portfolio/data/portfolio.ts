@@ -96,7 +96,7 @@ type Portfolio = {
 const portfolio: Portfolio[] = [
   {
     name: "Web Timer",
-    description: "イベントの開始時刻をカウントダウンするサイト🐬🐬🐬",
+    description: "🐬🐬🐬 イベントの開始時刻をカウントダウンするサイト。",
     repo_url: "https://github.com/osawa-koki/Web-Timer",
     production_url: "https://osawa-koki.github.io/Web-Timer/",
     created_at: new Date("2021-08-29"),
@@ -105,7 +105,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "404Finder",
-    description: "Webサイトをクローリングして404ページを検出するツール🦑🦑🦑",
+    description: "🦑🦑🦑 Webサイトをクローリングして404ページを検出するツール。",
     repo_url: "https://github.com/osawa-koki/404Finder",
     created_at: new Date("2022-09-05"),
     tech_used: ["C#", "SQL Server"],
@@ -113,7 +113,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "ベジェ曲線クリエイター",
-    description: "3次ベジェ曲線をGUIで生成するツール🥗🥗🥗",
+    description: "🥗🥗🥗 3次ベジェ曲線をGUIで生成するツール。",
     repo_url: "https://github.com/osawa-koki/bezier-maker.js",
     production_url: "https://osawa-koki.github.io/bezier-maker.js/",
     created_at: new Date("2021-09-03"),
@@ -122,7 +122,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "特殊文字コピーサイト",
-    description: "特殊文字をコピーするためのサイト🐔🐔🐔",
+    description: "🐔🐔🐔 特殊文字をコピーするためのサイト。",
     repo_url: "https://github.com/osawa-koki/special-char.ts",
     production_url: "https://osawa-koki.github.io/special-char.ts/",
     created_at: new Date("2021-11-07"),
@@ -131,7 +131,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "テキスト差分比較ツール",
-    description: "テキストの差分を比較するツール🐪🐪🐪",
+    description: "🐪🐪🐪 テキストの差分を比較するツール。",
     repo_url: "https://github.com/osawa-koki/diff.js",
     production_url: "https://osawa-koki.github.io/diff.js/",
     created_at: new Date("2021-10-23"),
@@ -140,7 +140,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "整列アルゴリズム可視化ツール",
-    description: "整列アルゴリズムを可視化するツール🦀🦀🦀",
+    description: "🦀🦀🦀 整列アルゴリズムを可視化するツール。",
     repo_url: "https://github.com/osawa-koki/sorter-demo.ts",
     production_url: "https://osawa-koki.github.io/sorter-demo.ts/",
     created_at: new Date("2021-12-16"),
@@ -149,7 +149,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "シンプル画像エディタ",
-    description: "画像を編集するためのシンプルなサイト🐈🐈🐈",
+    description: "🐈🐈🐈 画像を編集するためのシンプルなサイト。",
     repo_url: "https://github.com/osawa-koki/simple-image-manipulator.ts",
     production_url: "https://osawa-koki.github.io/simple-image-manipulator.ts/",
     created_at: new Date("2021-12-09"),
@@ -158,7 +158,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "シンプルGREP",
-    description: "ファイル内テキストを検索するためのシンプルなツール🐻🐻🐻",
+    description: "🐻🐻🐻 ファイル内テキストを検索するためのシンプルなツール。",
     repo_url: "https://github.com/osawa-koki/simple-grep.ts",
     production_url: "https://osawa-koki.github.io/simple-grep.ts/",
     created_at: new Date("2021-12-09"),
@@ -167,7 +167,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "Fractal Drawer",
-    description: "フラクタル画像を描画するツール👾👾👾",
+    description: "👾👾👾 フラクタル画像を描画するツール。",
     repo_url: "https://github.com/osawa-koki/fractal-drawer.ts",
     production_url: "https://osawa-koki.github.io/fractal-drawer.ts/",
     created_at: new Date("2021-12-15"),
@@ -176,7 +176,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "gui on linux",
-    description: "LinuxをGUIで操作するためのツール🌸🌸🌸",
+    description: "🌸🌸🌸 LinuxをGUIで操作するためのツール。",
     repo_url: "https://github.com/osawa-koki/gui-on-linux",
     created_at: new Date("2021-12-15"),
     tech_used: ["Python", "FastAPI", "Next.js", "Nginx", "Docker"],
@@ -185,7 +185,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "Simple Quiz",
-    description: "クイズ大会を開催できるシンプルなサイト❓❓❓",
+    description: "❓❓❓ クイズ大会を開催できるシンプルなサイト。",
     repo_url: "https://github.com/simple-quiz-org",
     production_url: "https://simple-quiz.org/",
     created_at: new Date("2021-12-15"),
@@ -195,7 +195,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "猿・猪・烏 判定AI",
-    description: "猿・猪・烏の画像を判定するAI🧠🧠🧠",
+    description: "🧠🧠🧠 猿・猪・烏の画像を判定するAI。",
     repo_url: "https://github.com/osawa-koki/startup-TensorFlow_Keras.py",
     created_at: new Date("2021-10-23"),
     tech_used: ["Python", "scikit-learn", "Keras", "Anaconda", "Docker"],
@@ -203,7 +203,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "ps1-games",
-    description: "PowerShellで動作する簡単なゲーム🎮🎮🎮",
+    description: "🎮🎮🎮 PowerShellで動作する簡単なゲーム。",
     repo_url: "https://github.com/osawa-koki/ps1-games",
     created_at: new Date("2021-11-17"),
     tech_used: ["PowerShell", "Docker"],
@@ -211,7 +211,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "bash-games",
-    description: "ShellScript(bash)で動作する簡単なゲーム🎮🎮🎮",
+    description: "🎮🎮🎮 ShellScript(bash)で動作する簡単なゲーム。",
     repo_url: "https://github.com/osawa-koki/bash-games",
     created_at: new Date("2021-11-21"),
     tech_used: ["ShellScript", "Docker"],
@@ -219,7 +219,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "情報処理安産確保支援士試験対策サイト(2022)",
-    description: "2022年版の情報処理安産確保支援士試験対策サイト📚📚📚",
+    description: "📚📚📚 2022年版の情報処理安産確保支援士試験対策サイト。",
     repo_url: "https://github.com/osawa-koki/SC2022",
     production_url: "https://osawa-koki.github.io/SC2022/",
     created_at: new Date("2022-12-24"),
@@ -228,7 +228,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "koko-campus.net",
-    description: "ITに関する総合学習サイト📚📚📚",
+    description: "📚📚📚 ITに関する総合学習サイト。",
     repo_url: "https://github.com/osawa-koki/koko-campus.net",
     production_url: "https://koko-campus.net/",
     created_at: new Date("2021-12-15"),
@@ -237,7 +237,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "octo-campus",
-    description: "ITに関する総合学習サイト📚📚📚",
+    description: "📚📚📚 ITに関する総合学習サイト。",
     repo_url: "https://github.com/osawa-koki/octo-campus",
     production_url: "https://osawa-koki.github.io/octo-campus/",
     created_at: new Date("2021-12-15"),
@@ -246,7 +246,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "img2excel",
-    description: "C#で実装した画像のピクセルデータから、Excelのセルの背景色を着色するお遊びツール🐼🐼🐼",
+    description: "🐼🐼🐼 C#で実装した画像のピクセルデータから、Excelのセルの背景色を着色するお遊びツール。",
     repo_url: "https://github.com/osawa-koki/img2excel",
     created_at: new Date("2021-11-20"),
     tech_used: ["C#"],
@@ -254,7 +254,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "img2excel.macro",
-    description: "Excelマクロで実装した画像のピクセルデータから、Excelのセルの背景色を着色するお遊びツール🐺🐺🐺",
+    description: "🐺🐺🐺 Excelマクロで実装した画像のピクセルデータから、Excelのセルの背景色を着色するお遊びツール。",
     repo_url: "https://github.com/osawa-koki/img2excel.macro",
     created_at: new Date("2021-11-22"),
     tech_used: ["VBA"],
@@ -262,7 +262,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "データベーススペシャリスト試験対策サイト(2023)",
-    description: "2022年版のデータベーススペシャリスト試験対策サイト📚📚",
+    description: "📚📚📚 2022年版のデータベーススペシャリスト試験対策サイト。",
     repo_url: "https://github.com/osawa-koki/DB2023",
     production_url: "https://osawa-koki.github.io/DB2023/",
     created_at: new Date("2022-12-26"),
@@ -271,7 +271,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "ShellConnected",
-    description: "WebSocketで実装したリアルタイム対話型のダブルクライアントサーバシステム🦓🦓🦓",
+    description: "🦓🦓🦓 WebSocketで実装したリアルタイム対話型のダブルクライアントサーバシステム。",
     repo_url: "https://github.com/osawa-koki/ShellConnected",
     production_url: "https://shellconnected.onrender.com/",
     created_at: new Date("2022-12-28"),
@@ -281,7 +281,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "Web-Host-Stat",
-    description: "名前解決やポートスキャンを行うWebアプリケーション🐧🐧🐧",
+    description: "🐧🐧🐧 名前解決やポートスキャンを行うWebアプリケーション。",
     repo_url: "https://github.com/osawa-koki/web-host-stat",
     production_url: "https://web-host-stat.onrender.com/",
     created_at: new Date("2022-12-28"),
@@ -290,7 +290,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "img2excel-server",
-    description: "画像のピクセルデータから、Excelのセルの背景色を着色するお遊びツールのサーバサイド版🐓🐓🐓",
+    description: "🐓🐓🐓 画像のピクセルデータから、Excelのセルの背景色を着色するお遊びツールのサーバサイド版。",
     repo_url: "https://github.com/osawa-koki/img2excel-server",
     production_url: "https://img2excel.onrender.com/",
     created_at: new Date("2022-12-29"),
@@ -299,7 +299,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "simple-chat-chat",
-    description: "Firebase(Firestore)を使用して実装したチャットアプリ🐤🐤🐤",
+    description: "🐤🐤🐤 Firebase(Firestore)を使用して実装したチャットアプリ。",
     repo_url: "https://github.com/osawa-koki/simple-chat-chat",
     production_url: "https://simple-chat-chat.web.app/chat/",
     created_at: new Date("2023-01-03"),
@@ -308,7 +308,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "sorting-algo-func.py",
-    description: "整列アルゴリズムを実装したPythonの関数群🐣🐣🐣",
+    description: "🐣🐣🐣 整列アルゴリズムを実装したPythonの関数群。",
     repo_url: "https://github.com/osawa-koki/sorting-algo-func.py",
     created_at: new Date("2023-01-09"),
     tech_used: ["Python", "Docker"],
@@ -316,7 +316,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "sorting-algo-func.c",
-    description: "整列アルゴリズムを実装したC言語の関数群🐥🐥🐥",
+    description: "🐥🐥🐥 整列アルゴリズムを実装したC言語の関数群。",
     repo_url: "https://github.com/osawa-koki/sorting-algo-func.c",
     created_at: new Date("2023-01-09"),
     tech_used: ["C", "Docker"],
@@ -324,7 +324,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "mandelbrot.c",
-    description: "C言語でマンデルブロ集合を描写するプログラムを作成しました🌠🌠🌠",
+    description: "🌠🌠🌠 C言語でマンデルブロ集合を描写するプログラムを作成しました。",
     repo_url: "https://github.com/osawa-koki/mandelbrot.c",
     created_at: new Date("2023-01-09"),
     tech_used: ["C", "Docker"],
@@ -332,7 +332,7 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "julia.c",
-    description: "C言語でジュリア集合を描写するプログラムを作成しました🌞🌞🌞",
+    description: "🌞🌞🌞 C言語でジュリア集合を描写するプログラムを作成しました。",
     repo_url: "https://github.com/osawa-koki/julia.c",
     created_at: new Date("2023-01-09"),
     tech_used: ["C", "Docker"],
@@ -340,18 +340,58 @@ const portfolio: Portfolio[] = [
   },
   {
     name: "TCP-client-server.cpp",
-    description: "C++でTCPクライアントとTCPサーバの通信を行うプログラムを作成しました🐆🐆🐆",
+    description: "🐆🐆🐆 C++でTCPクライアントとTCPサーバの通信を行うプログラムを作成しました。",
     repo_url: "https://github.com/osawa-koki/TCP-client-server.cpp",
     created_at: new Date("2023-01-09"),
     tech_used: ["C++", "Docker", "TCP/IP"],
     recommend: 3,
   },
   {
-    name: "port-scanner.c",
-    description: "C++でポートスキャンを実行するプログラムを開発しました🍠🍠🍠",
+    name: "port-scanner.cpp",
+    description: "🍠🍠🍠 C++でポートスキャンを実行するプログラムを開発しました。",
     repo_url: "https://github.com/osawa-koki/port-scanner.cpp",
     created_at: new Date("2023-01-09"),
     tech_used: ["C++", "Docker", "TCP/IP"],
+    recommend: 3,
+  },
+  {
+    name: "mandelbrot.py",
+    description: "📍📍📍 Pythonでマンデルブロ集合を描写するプログラムを作成しました。",
+    repo_url: "https://github.com/osawa-koki/mandelbrot.py",
+    created_at: new Date("2023-01-10"),
+    tech_used: ["Python", "Docker"],
+    recommend: 3,
+  },
+  {
+    name: "julia.py",
+    description: "📌📌📌 Pythonでジュリア集合を描写するプログラムを作成しました。",
+    repo_url: "https://github.com/osawa-koki/julia.py",
+    created_at: new Date("2023-01-10"),
+    tech_used: ["Python", "Docker"],
+    recommend: 3,
+  },
+  {
+    name: "TCP-client-server.py",
+    description: "🦍🦍🦍 PythonでTCPクライアントとTCPサーバの通信を行うプログラムを作成しました。",
+    repo_url: "https://github.com/osawa-koki/TCP-client-server.py",
+    created_at: new Date("2023-01-10"),
+    tech_used: ["Python", "Docker", "TCP/IP"],
+    recommend: 3,
+  },
+  {
+    name: "port-scanner.py",
+    description: "💻💻💻 Pythonでポートスキャンを実行するプログラムを開発しました。",
+    repo_url: "https://github.com/osawa-koki/port-scanner.py",
+    created_at: new Date("2023-01-10"),
+    tech_used: ["Python", "Docker", "TCP/IP"],
+    recommend: 3,
+  },
+  {
+    name: "fractal.php",
+    description: "🌀🌀🌀 PHPのGDライブラリを用いてフラクタル図形を描写しました。",
+    repo_url: "https://github.com/osawa-koki/fractal.php",
+    created_at: new Date("2023-01-11"),
+    tech_used: ["PHP", "Docker"],
     recommend: 3,
   },
 ];
