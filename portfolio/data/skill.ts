@@ -72,7 +72,7 @@ const _skill: DataFormat[] = [
   { name: "MongoDB", hours: 5, category: "Database" },
   { name: "h2", hours: 5, category: "Database" },
   { name: "Redis", hours: 5, category: "Database" },
-  { name: "Firebase", hours: 5, category: "Database" },
+  { name: "Firestore", hours: 5, category: "Database" },
 
   // OS
   { name: "Ubuntu(Linux)", hours: 50, category: "OS" },
