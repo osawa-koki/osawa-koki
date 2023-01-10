@@ -386,6 +386,14 @@ const portfolio: Portfolio[] = [
     tech_used: ["Python", "Docker", "TCP/IP"],
     recommend: 3,
   },
+  {
+    name: "fractal.php",
+    description: "🌀🌀🌀 PHPのGDライブラリを用いてフラクタル図形を描写しました。",
+    repo_url: "https://github.com/osawa-koki/fractal.php",
+    created_at: new Date("2023-01-11"),
+    tech_used: ["PHP", "Docker"],
+    recommend: 3,
+  },
 ];
 
 export default portfolio.sort((a, b) => {
