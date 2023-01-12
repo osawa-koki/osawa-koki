@@ -380,6 +380,7 @@ const portfolio: Portfolio[] = [
     name: "fractal.php",
     description: "🌀🌀🌀 PHPのGDライブラリを用いてフラクタル図形を描写しました。",
     repo_url: "https://github.com/osawa-koki/fractal.php",
+    production_url: "https://fractal-drawer.onrender.com",
     created_at: new Date("2023-01-11"),
     tech_used: ["PHP", "Docker"],
     recommend: 3,
