@@ -1,6 +1,6 @@
 # たこさんマークのエンジニア！
 
-[![たこさん](./property/octopus.jpg)](https://osawa-koki.github.io/osawa-koki/)  
+[![たこさん](./property/tako.png)](https://osawa-koki.github.io/osawa-koki/)  
 
 - 👋 Hi, I’m @osawa-koki
 - 👀 I’m interested in ...
