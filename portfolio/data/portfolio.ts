@@ -270,16 +270,6 @@ const portfolio: Portfolio[] = [
     recommend: 4,
   },
   {
-    name: "ShellConnected",
-    description: "🦓🦓🦓 WebSocketで実装したリアルタイム対話型のダブルクライアントサーバシステム。",
-    repo_url: "https://github.com/osawa-koki/ShellConnected",
-    production_url: "https://shellconnected.onrender.com/",
-    created_at: new Date("2022-12-28"),
-    tech_used: ["Next.js", "Bootstrap", "C#", "WebSocket", "SignalR", "Docker"],
-    recommend: 4,
-    in_development: true,
-  },
-  {
     name: "Web-Host-Stat",
     description: "🐧🐧🐧 名前解決やポートスキャンを行うWebアプリケーション。",
     repo_url: "https://github.com/osawa-koki/web-host-stat",
