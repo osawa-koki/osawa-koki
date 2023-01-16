@@ -25,6 +25,7 @@ const Layout = ({ children, title = default_title }: Props) => (
         <Link href="/portfolio">Portfolio</Link>
         <Link href="/resume">Resume</Link>
         <Link href="/skill">Skill</Link>
+        <Link href="/dream">Dream</Link>
         <Link href="/faq">FAQ</Link>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdR3z3wfMAZqEGXOTkZgnz_dwCgbM5RoFcHKh4xDw8ioOIq5A/viewform" target='_black'>Contact</a>
       </nav>
