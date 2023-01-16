@@ -92,15 +92,17 @@ const _skill: DataFormat[] = [
   { name: "Debian(Linux)", hours: 10, category: "OS" },
   { name: "CentOS(Linux)", hours: 10, category: "OS" },
   { name: "Windows", hours: 300, category: "OS" },
+  { name: "Windows Server", hours: 30, category: "OS" },
   { name: "MacOS", hours: 3, category: "OS" },
 
   // Cloud
   { name: "Azure", hours: 5, category: "Cloud" },
   { name: "AWS", hours: 5, category: "Cloud" },
-  { name: "GCP", hours: 15, category: "Cloud" },
+  { name: "GCP", hours: 55, category: "Cloud" },
   { name: "Heroku", hours: 15, category: "Cloud" },
   { name: "Streamlit", hours: 5, category: "Cloud" },
-  { name: "Render", hours: 15, category: "Cloud" },
+  { name: "Render", hours: 55, category: "Cloud" },
+  { name: "WebARENA Indigo", hours: 15, category: "Cloud" },
 
   // Service
   { name: "Git", hours: 200, category: "Service" },
