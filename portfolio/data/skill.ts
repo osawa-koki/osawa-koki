@@ -118,7 +118,7 @@ const _skill: DataFormat[] = [
   { name: "Microsoft Office", hours: 10, category: "Service" },
   { name: "Libre Office", hours: 20, category: "Service" },
   { name: "Hugo", hours: 25, category: "Service" },
-];
+].sort((a, b) => b.hours - a.hours);
 
 const skill_categories: SkillCategory[] = [
   "Frontend",
