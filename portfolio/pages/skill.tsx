@@ -33,7 +33,7 @@ const SkillPage = () => (
   <Layout title="osawa's skills">
     <div id='Skill'>
       {skills.map((skill) => (
-        <div className='skillUnit'>
+        <div className='skillUnit' key={skill.category}>
           <h2>{skill.category}</h2>
           <Bar
             className='chart'

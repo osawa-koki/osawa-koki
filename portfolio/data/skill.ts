@@ -99,6 +99,7 @@ const _skill: DataFormat[] = [
   { name: "AWS", hours: 5, category: "Cloud" },
   { name: "GCP", hours: 15, category: "Cloud" },
   { name: "Heroku", hours: 15, category: "Cloud" },
+  { name: "Streamlit", hours: 5, category: "Cloud" },
   { name: "Render", hours: 15, category: "Cloud" },
 
   // Service
