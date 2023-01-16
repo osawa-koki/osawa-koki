@@ -2,6 +2,7 @@
 type SkillCategory =
   | 'Frontend'
   | 'Backend'
+  | 'Backend(Framework)'
   | 'Database'
   | 'OS'
   | 'Cloud'
@@ -63,6 +64,18 @@ const _skill: DataFormat[] = [
   { name: "Ocaml", hours: 15, category: "Backend" },
   { name: "Clojure", hours: 5, category: "Backend" },
 
+  // Backend(Framework)
+  { name: "Express", hours: 5, category: "Backend(Framework)" },
+  { name: "Ruby on Rails", hours: 15, category: "Backend(Framework)" },
+  { name: "Laravel", hours: 5, category: "Backend(Framework)" },
+  { name: "Spring", hours: 15, category: "Backend(Framework)" },
+  { name: "ASP.NET", hours: 35, category: "Backend(Framework)" },
+  { name: "ASP.NET Core", hours: 15, category: "Backend(Framework)" },
+  { name: "Django", hours: 5, category: "Backend(Framework)" },
+  { name: "FastAPI", hours: 55, category: "Backend(Framework)" },
+  { name: "Flask", hours: 10, category: "Backend(Framework)" },
+  { name: "Phoenix", hours: 5, category: "Backend(Framework)" },
+
   // Database
   { name: "MySQL", hours: 50, category: "Database" },
   { name: "mariaDB", hours: 10, category: "Database" },
@@ -107,91 +120,36 @@ const _skill: DataFormat[] = [
   { name: "Hugo", hours: 25, category: "Service" },
 ];
 
-const _skill_frontend = _skill.filter((s) => s.category === "Frontend");
-const _skill_backend = _skill.filter((s) => s.category === "Backend");
-const _skill_database = _skill.filter((s) => s.category === "Database");
-const _skill_os = _skill.filter((s) => s.category === "OS");
-const _skill_cloud = _skill.filter((s) => s.category === "Cloud");
-const _skill_service = _skill.filter((s) => s.category === "Service");
+const skill_categories: SkillCategory[] = [
+  "Frontend",
+  "Backend",
+  "Backend(Framework)",
+  "Database",
+  "OS",
+  "Cloud",
+  "Service",
+];
 
 const color = '#0e6efe75';
 
-const skill_frontend: ChartData = {
-  labels: _skill_frontend.map((s) => s.name),
-  datasets: [
-    {
-      label: "Frontend",
-      data: _skill_frontend.map((s) => s.hours),
-      borderWidth: 1,
-      borderColor: color,
-      backgroundColor: color,
-    },
-  ],
-};
+const skills = skill_categories.map((category) => {
+  const skill_ = _skill.filter((s) => s.category === category);
+  return {
+    skill: skill_,
+    category,
+    chart_data: {
+      labels: skill_.map((s) => s.name),
+      datasets: [
+        {
+          label: category,
+          data: skill_.map((s) => s.hours),
+          borderWidth: 1,
+          borderColor: color,
+          backgroundColor: color,
+        },
+      ],
+    } as ChartData
+  };
+});
 
-const skill_backend: ChartData = {
-  labels: _skill_backend.map((s) => s.name),
-  datasets: [
-    {
-      label: "Backend",
-      data: _skill_backend.map((s) => s.hours),
-      borderWidth: 1,
-      borderColor: color,
-      backgroundColor: color,
-    },
-  ],
-};
-
-const skill_database: ChartData = {
-  labels: _skill_database.map((s) => s.name),
-  datasets: [
-    {
-      label: "Database",
-      data: _skill_database.map((s) => s.hours),
-      borderWidth: 1,
-      borderColor: color,
-      backgroundColor: color,
-    },
-  ],
-};
-
-const skill_os: ChartData = {
-  labels: _skill_os.map((s) => s.name),
-  datasets: [
-    {
-      label: "OS",
-      data: _skill_os.map((s) => s.hours),
-      borderWidth: 1,
-      borderColor: color,
-      backgroundColor: color,
-    },
-  ],
-};
-
-const skill_cloud: ChartData = {
-  labels: _skill_cloud.map((s) => s.name),
-  datasets: [
-    {
-      label: "Cloud",
-      data: _skill_cloud.map((s) => s.hours),
-      borderWidth: 1,
-      borderColor: color,
-      backgroundColor: color,
-    },
-  ],
-};
-
-const skill_service: ChartData = {
-  labels: _skill_service.map((s) => s.name),
-  datasets: [
-    {
-      label: "Service",
-      data: _skill_service.map((s) => s.hours),
-      borderWidth: 1,
-      borderColor: color,
-      backgroundColor: color,
-    },
-  ],
-};
-
-export { skill_frontend, skill_backend, skill_database, skill_os, skill_cloud, skill_service };
+export { skills };
