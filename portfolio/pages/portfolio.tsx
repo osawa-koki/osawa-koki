@@ -10,7 +10,7 @@ const PortfolioPage = () => (
       {
         portfolio.map((item, _) => {
           return (
-            <div className='portfolio'>
+            <div className='portfolio' key={item.name}>
               <h2 className='title'>{item.name}</h2>
               <p className='description'>{item.description}</p>
               <a className='repo_url' href={item.repo_url} target='_blank'>Source Code</a>
@@ -19,7 +19,7 @@ const PortfolioPage = () => (
               }
               <ul className='tech_used'>
                 {
-                  item.tech_used.map((tech, _) => <li>{tech}</li>)
+                  item.tech_used.map((tech, _) => <li key={tech}>{tech}</li>)
                 }
               </ul>
               <input type="date" value={Date2String(item.created_at)} readOnly />
