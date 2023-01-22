@@ -107,7 +107,7 @@ const _skill: DataFormat[] = ([
   // Service
   { name: "Git", hours: 200, category: "Service" },
   { name: "GitHub", hours: 200, category: "Service" },
-  { name: "Firebase", hours: 10, category: "Service" },
+  { name: "Firebase Hosting", hours: 10, category: "Service" },
   { name: "Cloud Build", hours: 10, category: "Service" },
   { name: "Cloud Run", hours: 10, category: "Service" },
   { name: "Apache", hours: 50, category: "Service" },
@@ -121,6 +121,9 @@ const _skill: DataFormat[] = ([
   { name: "Microsoft Office", hours: 10, category: "Service" },
   { name: "Libre Office", hours: 20, category: "Service" },
   { name: "Hugo", hours: 25, category: "Service" },
+  { name: "Firebase Authentication", hours: 15, category: "Service" },
+  { name: "Auth0", hours: 15, category: "Service" },
+  { name: "Terraform", hours: 5, category: "Service" },
 ] as DataFormat[]).sort((a, b) => b.hours - a.hours);
 
 const skill_categories: SkillCategory[] = [
