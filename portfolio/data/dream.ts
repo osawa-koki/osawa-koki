@@ -70,6 +70,38 @@ const _dreams: Dream[] = ([
     progress: 0,
     timespan: '中期(3ヶ月～1年)',
   },
+  {
+    title: 'Firebase Authenticationのお勉強',
+    description: 'IDaasの中でも有名なサービスをマスターして、開発のスピードを上げる。',
+    start_at: new Date('2023-01-10'),
+    end_at: new Date('2023-03-31'),
+    progress: 100,
+    timespan: '中期(3ヶ月～1年)',
+  },
+  {
+    title: 'Auth0のお勉強',
+    description: 'IDaasの中でも有名なサービスをマスターして、開発のスピードを上げる。',
+    start_at: new Date('2023-01-10'),
+    end_at: new Date('2023-03-31'),
+    progress: 100,
+    timespan: '中期(3ヶ月～1年)',
+  },
+  {
+    title: 'Security Quizの開発',
+    description: 'セキュリティに関するクイズアプリを作ってみる。\nセキュリティに関する知識を身につけるためにも、クイズアプリを作ってみる。',
+    start_at: new Date('2023-01-10'),
+    end_at: new Date('2023-03-31'),
+    progress: 5,
+    timespan: '中期(3ヶ月～1年)',
+  },
+  {
+    title: 'Terraformのお勉強',
+    description: '最近はIaCが注目されているので、触ってみる。\nsecurity-quizなどに使用したい。',
+    start_at: new Date('2023-01-10'),
+    end_at: new Date('2023-03-31'),
+    progress: 10,
+    timespan: '中期(3ヶ月～1年)',
+  },
 ] as Dream[]).map(dream => {
   const progress = dream.progress >= 100 ? 100 : dream.progress;
   const timespan = progress >= 100 ? '終了' : dream.timespan;
