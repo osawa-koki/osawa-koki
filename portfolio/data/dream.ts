@@ -102,6 +102,14 @@ const _dreams: Dream[] = ([
     progress: 10,
     timespan: '中期(3ヶ月～1年)',
   },
+  {
+    title: 'Kubernetesのお勉強',
+    description: 'Dockerに関してはある程度理解できたので、Kubernetesに触れてみる。\nとりあえず、脱初心者を目指す。',
+    start_at: new Date('2023-01-10'),
+    end_at: new Date('2023-03-31'),
+    progress: 10,
+    timespan: '長期(1年～)',
+  },
 ] as Dream[]).map(dream => {
   const progress = dream.progress >= 100 ? 100 : dream.progress;
   const timespan = progress >= 100 ? '終了' : dream.timespan;
