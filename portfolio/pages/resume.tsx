@@ -7,7 +7,7 @@ const ResumePage = () => {
   return (
     <Layout title="osawa's resume">
       <div id='Resume'>
-        <img id='MyIcon' src={`${Settings.IMG_ROOT_PATH}/Avatar.png`} alt="MyIcon" />
+        <img id='MyIcon' src={`${Settings.IMG_ROOT_PATH}/Avatar.png`} alt='MyIcon' />
         <table>
           <caption>プロフィール</caption>
           <tbody>

@@ -22,7 +22,7 @@ const PortfolioPage = () => (
                   item.tech_used.map((tech, _) => <li key={tech}>{tech}</li>)
                 }
               </ul>
-              <input type="date" value={Date2String(item.created_at)} readOnly />
+              <input type='date' value={Date2String(item.created_at)} readOnly />
             </div>
           )
         })
