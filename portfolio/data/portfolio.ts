@@ -275,7 +275,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/web-host-stat",
     production_url: "https://web-host-stat.onrender.com/",
     created_at: new Date("2022-12-28"),
-    tech_used: ["Next.js", "Bootstrap", "Go", "Docker"],
+    tech_used: ["Next.js", "TypeScript", "Bootstrap", "Go", "Docker"],
     recommend: 4,
   },
   {
@@ -284,7 +284,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/img2excel-server",
     production_url: "https://img2excel.onrender.com/",
     created_at: new Date("2022-12-29"),
-    tech_used: ["Next.js", "Bootstrap", "Material UI", "C#", "Docker"],
+    tech_used: ["Next.js", "TypeScript", "Bootstrap", "Material UI", "C#", "Docker"],
     recommend: 5,
   },
   {
@@ -293,7 +293,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/simple-chat-chat",
     production_url: "https://simple-chat-chat.web.app/chat/",
     created_at: new Date("2023-01-03"),
-    tech_used: ["Firebase", "Firestore", "Node.js", "Nuxt.js", "Bootstrap"],
+    tech_used: ["Firebase", "Firestore", "Node.js", "Nuxt.js", "TypeScript", "Bootstrap"],
     recommend: 5,
   },
   {
@@ -383,6 +383,15 @@ const portfolio: Portfolio[] = [
     production_url: "https://fractal-drawer.onrender.com",
     created_at: new Date("2023-01-11"),
     tech_used: ["PHP", "Docker"],
+    recommend: 3,
+  },
+  {
+    name: "Simple Mail Sender",
+    description: "📨📨📨 メール送信サイトを作成しました。",
+    repo_url: "https://github.com/osawa-koki/simple-mail-sender",
+    production_url: "https://simple-mail-sender.onrender.com/",
+    created_at: new Date("2023-01-21"),
+    tech_used: ["Go", "Docker", "Next.js", "TypeScript"],
     recommend: 3,
   },
 ];
