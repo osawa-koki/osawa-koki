@@ -391,7 +391,7 @@ const portfolio: Portfolio[] = [
     repo_url: "https://github.com/osawa-koki/simple-mail-sender",
     production_url: "https://simple-mail-sender.onrender.com/",
     created_at: new Date("2023-01-21"),
-    tech_used: ["Go", "Docker", "Next.js", "TypeScript"],
+    tech_used: ["Go", "Docker", "Next.js", "TypeScript", "SMTP"],
     recommend: 3,
   },
 ];
