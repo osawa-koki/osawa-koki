@@ -36,7 +36,7 @@ const FaqPage = () => {
             <div className='FaqUnit' key={f.id}>
               <Button
                 className='FaqQuestion'
-                variant="outline-primary"
+                variant='outline-primary'
                 onClick={() => {
                   const new_open = faqs.map((o, _) => {
                     if (o.id === f.id) {
@@ -54,7 +54,7 @@ const FaqPage = () => {
                   );
                   setFaqs(new_open);
                 }}
-                aria-controls="example-collapse-text"
+                aria-controls='example-collapse-text'
                 aria-expanded={f.open}
               >
                 {f.question}

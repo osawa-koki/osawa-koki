@@ -7,7 +7,7 @@ const IndexPage = () => (
     <div id='Index'>
       <div id='MainTopic'>
         <h1>osawa's profile</h1>
-        <img id='Avatar' src={`${Settings.IMG_ROOT_PATH}/Avatar.png`} alt="Avatar" />
+        <img id='Avatar' src={`${Settings.IMG_ROOT_PATH}/Avatar.png`} alt='Avatar' />
         <p id='OneComment'>たこさんマークのエンジニア🐙🐙🐙</p>
       </div>
     </div>
