@@ -169,7 +169,7 @@ const setting = {
       projects: [
         {
           title: '新規格対応のための機能追加',
-          description: 'ISMS新規格対応のための機能追加を行いました。\n\n実装を主に担当し、設計・テスト・運用保守も一部担当。',
+          description: 'ISMS新規格対応のための機能追加を担当。\n\n実装を主に担当し、設計・テスト・運用保守も一部担当。',
           startDate: dayjs('2023-04'),
           endDate: dayjs('2023-06'),
           technologies: [
