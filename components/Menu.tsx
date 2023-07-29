@@ -36,7 +36,7 @@ function Menu (props: {
                   ? 'btn-primary'
                   : ''
               }`}
-              onClick={() => pageChanged(page.path)}
+              onClick={() => { pageChanged(page.path) }}
             >
               {page.emoji}&nbsp;{page.name}
             </Link>
