@@ -32,7 +32,7 @@ function Menu (props: {
               key={index}
               href={page.path}
               className={`btn ${
-                currentPage === `${setting.basePath}${page.path}`
+                currentPage === page.path
                   ? 'btn-primary'
                   : ''
               }`}
