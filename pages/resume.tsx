@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table } from 'react-bootstrap'
+import { ListGroup, Table } from 'react-bootstrap'
 import setting from '../setting'
 import dayjs from 'dayjs'
 
@@ -46,6 +46,16 @@ export default function ResumePage (): JSX.Element {
               <a href={setting.profile.github.uri}>@{setting.profile.github.name}</a>
             </td>
           </tr>
+          <tr>
+            <td>資格</td>
+            <td>
+            <ListGroup>
+              {setting.profile.certifications.map((certification, index) => (
+                <ListGroup.Item key={index}>{certification.name}</ListGroup.Item>
+              ))}
+            </ListGroup>
+            </td>
+          </tr>
         </tbody>
       </Table>
       <h2 className='mt-5 border-start border-success border-4 ps-3'>学歴</h2>
@@ -57,22 +67,14 @@ export default function ResumePage (): JSX.Element {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>2014/04</td>
-            <td>某埼玉県立高校 入学</td>
-          </tr>
-          <tr>
-            <td>2017/03</td>
-            <td>某埼玉県立高校 卒業</td>
-          </tr>
-          <tr>
-            <td>2017/04</td>
-            <td>都内の某私立大学 経営学部 会計学科 入学</td>
-          </tr>
-          <tr>
-            <td>2022/03</td>
-            <td>都内の某私立大学 経営学部 会計学科 卒業</td>
-          </tr>
+          {
+            setting.profile.educationalHistories.map((educationalHistory, index) => (
+              <tr key={index}>
+                <td>{educationalHistory.date.format('YYYY年 MM月')}</td>
+                <td>{educationalHistory.event}</td>
+              </tr>
+            ))
+          }
         </tbody>
       </Table>
       <h2 className='mt-5 border-start border-success border-4 ps-3'>職歴</h2>
@@ -84,18 +86,14 @@ export default function ResumePage (): JSX.Element {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>2022/04</td>
-            <td>都内の某WEB系企業(ECサイト構築事業者)のセキュリティ系部門 入社</td>
-          </tr>
-          <tr>
-            <td>2023/03</td>
-            <td>都内の某WEB系企業(ECサイト構築事業者)のセキュリティ系部門 退社</td>
-          </tr>
-          <tr>
-            <td>2023/04</td>
-            <td>都内の某WEB系企業(セキュリティオートメーションツール開発事業者)の開発系部門 入社</td>
-          </tr>
+          {
+            setting.profile.workHistories.map((workHistory, index) => (
+              <tr key={index}>
+                <td>{workHistory.date.format('YYYY年 MM月')}</td>
+                <td>{workHistory.event}</td>
+              </tr>
+            ))
+          }
         </tbody>
       </Table>
     </>
