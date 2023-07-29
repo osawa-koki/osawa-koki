@@ -5,7 +5,7 @@ const setting = {
   isProd,
   basePath: Env.basePath,
   apiPath: isProd ? '' : 'http://localhost:8000',
-  title: 'おおさわのポートフォリオサイト🐙🐙🐙'
+  title: '🐙🐬🐸 おおさわ 🐸🐬🐙'
 }
 
 export default setting
