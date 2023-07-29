@@ -3,7 +3,6 @@ import Link from 'next/link'
 import pages from '../pages'
 import { Button } from 'react-bootstrap'
 import { BsGearFill } from 'react-icons/bs'
-import setting from '../setting'
 
 function Menu (props: {
   currentPage: string
