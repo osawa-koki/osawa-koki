@@ -2,17 +2,17 @@ const pages = [
   {
     emoji: '🏠',
     path: '/',
-    name: 'Home'
+    name: 'ホーム'
   },
   {
     emoji: '📖',
-    path: '/about/',
-    name: 'About'
+    path: '/resume/',
+    name: '履歴書'
   },
   {
     emoji: '💓',
-    path: '/contact/',
-    name: 'Contact'
+    path: '/work-history/',
+    name: '職務経歴書'
   }
 ]
 

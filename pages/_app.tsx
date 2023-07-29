@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { type AppProps } from 'next/app'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -9,15 +9,9 @@ import '../styles/menu.scss'
 import Head from 'next/head'
 
 import setting from '../setting'
-import { DataContext } from '../src/DataContext'
-import type SharedData from '../src/SharedData'
+import Layout from '../components/Layout'
 
 export default function MyApp ({ Component, pageProps }: AppProps): JSX.Element {
-  const [sharedData, setSharedData] = useState<SharedData>({
-    username: '',
-    email: 'osawa-koki@example.com'
-  })
-
   return (
     <>
       <Head>
@@ -30,9 +24,9 @@ export default function MyApp ({ Component, pageProps }: AppProps): JSX.Element 
           href={`${setting.basePath}/favicon.ico`}
         />
       </Head>
-      <DataContext.Provider value={{ sharedData, setSharedData }}>
+      <Layout>
         <Component {...pageProps} />
-      </DataContext.Provider>
+      </Layout>
     </>
   )
 }
