@@ -16,7 +16,8 @@
     "build": "next build && next export -o ./dist",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "lint": "echo \"Error: no lint specified\" && exit 0",
+    "lint": "eslint --ext .ts,.tsx .",
+    "lint:fix": "eslint --fix --ext .ts,.tsx .",
     "type-check": "tsc"
   },
   "dependencies": {
