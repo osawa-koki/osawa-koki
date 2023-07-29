@@ -36,7 +36,7 @@ const Layout = ({
           ? (
           <>
             <main>{children}</main>
-            <Menu currentPage={currentPage!} setCurrentPage={setCurrentPage} />
+            <Menu currentPage={currentPage} setCurrentPage={setCurrentPage} />
           </>
             )
           : (
