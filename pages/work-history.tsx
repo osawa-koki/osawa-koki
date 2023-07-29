@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { Button, Alert, Form } from 'react-bootstrap'
+import React from 'react'
 
 export default function ContactPage (): JSX.Element {
   return (
