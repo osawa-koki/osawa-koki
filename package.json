@@ -1,5 +1,12 @@
 {
-  "private": true,
+  "name": "osawa-koki-portfolio",
+  "version": "1.0.0",
+  "description": "'osawa-koki'のポートフォリオ🐙🐙🐙",
+  "main": "index.js",
+  "repository": "https://github.com/osawa-koki/osawa-koki.git",
+  "author": "koki@osawa.dev",
+  "license": "Apache-2.0",
+  "private": false,
   "scripts": {
     "dev": "next",
     "build": "next build && next export -o ./dist",
