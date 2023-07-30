@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  SUB_DIRECTORY: /osawa-koki
+
 permissions:
   contents: read
   pages: write
@@ -42,7 +45,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build with Next.js
-        run: yarn build
+        run: SUB_DIRECTORY=${{ env.SUB_DIRECTORY }} yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
