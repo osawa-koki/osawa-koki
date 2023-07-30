@@ -6,7 +6,6 @@ import Menu from './Menu'
 interface Props {
   children?: ReactNode
   title?: string
-  currentPage?: string
   menu?: boolean
   footer?: boolean
 }
