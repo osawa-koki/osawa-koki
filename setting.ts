@@ -44,7 +44,6 @@ const setting = {
     sex: '男性',
     address: '北海道札幌市',
     email: 'koki@osawa.cloud',
-    phone: '090-8198-6196',
     github: {
       name: 'osawa-koki',
       uri: 'https://github.com/osawa-koki'

@@ -33,10 +33,6 @@ export default function ResumePage (): JSX.Element {
             <td>{setting.profile.address}</td>
           </tr>
           <tr>
-            <td>電話番号</td>
-            <td>{setting.profile.phone}</td>
-          </tr>
-          <tr>
             <td>メールアドレス</td>
             <td>{setting.profile.email}</td>
           </tr>
