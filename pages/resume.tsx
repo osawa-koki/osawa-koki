@@ -1,5 +1,6 @@
 import React from 'react'
 import { ListGroup, Table } from 'react-bootstrap'
+import { BsFillEnvelopeFill, BsGithub } from 'react-icons/bs'
 import setting from '../setting'
 import dayjs from 'dayjs'
 
@@ -34,12 +35,12 @@ export default function ResumePage (): JSX.Element {
           </tr>
           <tr>
             <td>メールアドレス</td>
-            <td>{setting.profile.email}</td>
+            <td><a href={`mailto:${setting.profile.email}`}><BsFillEnvelopeFill /></a>&nbsp;{setting.profile.email}</td>
           </tr>
           <tr>
             <td>GitHub</td>
             <td>
-              <a href={setting.profile.github.uri}>@{setting.profile.github.name}</a>
+              <a href={setting.profile.github.uri}><BsGithub /></a>&nbsp;{setting.profile.github.name}
             </td>
           </tr>
           <tr>
