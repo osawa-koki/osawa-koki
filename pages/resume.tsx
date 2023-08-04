@@ -8,7 +8,7 @@ export default function ResumePage (): JSX.Element {
     <>
       <h1 className='mt-5 border-start border-danger border-5 ps-3'>履歴書</h1>
       <h2 className='mt-5 border-start border-success border-4 ps-3'>基本情報</h2>
-      <Table striped bordered hover>
+      <Table striped bordered>
         <thead>
           <tr>
             <th>項目</th>
@@ -59,7 +59,7 @@ export default function ResumePage (): JSX.Element {
         </tbody>
       </Table>
       <h2 className='mt-5 border-start border-success border-4 ps-3'>学歴</h2>
-      <Table striped bordered hover>
+      <Table striped bordered>
         <thead>
           <tr>
             <th>年月</th>
@@ -78,7 +78,7 @@ export default function ResumePage (): JSX.Element {
         </tbody>
       </Table>
       <h2 className='mt-5 border-start border-success border-4 ps-3'>職歴</h2>
-      <Table striped bordered hover>
+      <Table striped bordered>
         <thead>
           <tr>
             <th>年月</th>
