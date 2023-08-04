@@ -62,33 +62,33 @@ const setting = {
     educationalHistories: [
       {
         date: dayjs('2014-04'),
-        event: '某埼玉県立高校 入学'
+        event: '埼玉の県立高校 入学'
       },
       {
         date: dayjs('2017-03'),
-        event: '某埼玉県立高校 卒業'
+        event: '埼玉の県立高校 卒業'
       },
       {
         date: dayjs('2017-04'),
-        event: '都内の某私立大学 経営学部 会計学科 入学'
+        event: '都内の私立大学 経営学部 会計学科 入学'
       },
       {
         date: dayjs('2022-03'),
-        event: '都内の某私立大学 経営学部 会計学科 卒業'
+        event: '都内の私立大学 経営学部 会計学科 卒業'
       }
     ] as IEducationalHistory[],
     workHistories: [
       {
         date: dayjs('2022-04'),
-        event: '都内の某WEB系企業(ECサイト構築事業者)のセキュリティ系部門 入社'
+        event: '都内のECサイト構築企業のセキュリティ系部門 入社'
       },
       {
         date: dayjs('2023-03'),
-        event: '都内の某WEB系企業(ECサイト構築事業者)のセキュリティ系部門 退社'
+        event: '都内のECサイト構築企業のセキュリティ系部門 退社'
       },
       {
         date: dayjs('2023-04'),
-        event: '都内の某WEB系企業(セキュリティオートメーションツール開発事業者)の開発系部門 入社'
+        event: '都内のセキュリティオートメーションツール開発企業の開発系部門 入社'
       }
     ] as IWorkHistory[]
   },
