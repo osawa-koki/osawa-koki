@@ -2,6 +2,7 @@ import React, { useState, type ReactNode } from 'react'
 import Head from 'next/head'
 import setting from '../setting'
 import Menu from './Menu'
+import pages from '../pages'
 
 interface Props {
   children?: ReactNode
@@ -16,7 +17,11 @@ const Layout = ({
   menu = true,
   footer = true
 }: Props): JSX.Element => {
-  const [currentPage, setCurrentPage] = useState<string>('/')
+  const [currentPage, setCurrentPage] = useState<string>(pages[0].path)
+
+  const changePage = (path: string): void => {
+    setCurrentPage(path)
+  }
 
   return (
     <>
@@ -35,7 +40,7 @@ const Layout = ({
           ? (
           <>
             <main>{children}</main>
-            <Menu currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <Menu currentPage={currentPage} changePage={changePage} />
           </>
             )
           : (

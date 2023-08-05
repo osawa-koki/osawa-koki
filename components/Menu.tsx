@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import pages from '../pages'
 import { Button } from 'react-bootstrap'
@@ -6,21 +6,13 @@ import { BsGearFill } from 'react-icons/bs'
 
 function Menu (props: {
   currentPage: string
-  setCurrentPage: React.Dispatch<React.SetStateAction<string>>
+  changePage: (path: string) => void
 }): JSX.Element {
   const {
     currentPage,
-    setCurrentPage
+    changePage
   } = props
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
-
-  useEffect(() => {
-    setCurrentPage(window.location.pathname)
-  }, [])
-
-  const pageChanged = (path: string): void => {
-    setCurrentPage(path)
-  }
 
   return (
     <>
@@ -35,7 +27,7 @@ function Menu (props: {
                   ? 'btn-primary'
                   : ''
               }`}
-              onClick={() => { pageChanged(page.path) }}
+              onClick={() => { changePage(page.path) }}
             >
               {page.emoji}&nbsp;{page.name}
             </Link>
