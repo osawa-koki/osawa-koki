@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap'
 import { BsGearFill } from 'react-icons/bs'
 
 function Menu (props: {
-  currentPage: string
+  currentPage: string | null
   changePage: (path: string) => void
 }): JSX.Element {
   const {
