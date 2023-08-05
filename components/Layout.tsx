@@ -18,10 +18,6 @@ const Layout = ({
 }: Props): JSX.Element => {
   const [currentPage, setCurrentPage] = useState<string | null>(null)
 
-  const changePage = (path: string): void => {
-    setCurrentPage(path)
-  }
-
   useEffect(() => {
     const path = window.location.pathname.replace(setting.basePath, '')
     setCurrentPage(path)
@@ -44,7 +40,7 @@ const Layout = ({
           ? (
           <>
             <main>{children}</main>
-            <Menu currentPage={currentPage} changePage={changePage} />
+            <Menu currentPage={currentPage} setCurrentPage={setCurrentPage} />
           </>
             )
           : (
