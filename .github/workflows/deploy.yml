@@ -2,9 +2,8 @@ name: Deploy Next.js site to Pages
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    tags:
+      - "v-*"
 
 env:
   SUB_DIRECTORY: /osawa-koki
