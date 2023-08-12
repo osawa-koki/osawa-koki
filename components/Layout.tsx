@@ -1,5 +1,6 @@
 import React, { useState, type ReactNode, useEffect } from 'react'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import setting from '../setting'
 import Menu from './Menu'
 
@@ -16,12 +17,14 @@ const Layout = ({
   menu = true,
   footer = true
 }: Props): JSX.Element => {
+  const router = useRouter()
+
   const [currentPage, setCurrentPage] = useState<string | null>(null)
 
   useEffect(() => {
     const path = window.location.pathname.replace(setting.basePath, '')
     setCurrentPage(path)
-  }, [])
+  }, [router.pathname])
 
   return (
     <>
@@ -40,7 +43,7 @@ const Layout = ({
           ? (
           <>
             <main>{children}</main>
-            <Menu currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <Menu currentPage={currentPage} />
           </>
             )
           : (
