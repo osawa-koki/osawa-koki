@@ -22,7 +22,7 @@ function Menu (props: {
               href={page.path}
               className={`btn ${
                 currentPage === page.path
-                  ? 'btn-primary'
+                  ? 'btn-primary active'
                   : ''
               }`}
             >
