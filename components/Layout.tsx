@@ -27,15 +27,15 @@ const Layout = ({
     <>
       <Head>
         <title>{title}</title>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <link
-          rel="shortcut icon"
+          rel='shortcut icon'
           href={`${setting.basePath}favicon.ico`}
-          type="image/x-icon"
+          type='image/x-icon'
         />
       </Head>
-      <div id="Wrapper">
+      <div id='Wrapper'>
         {menu
           ? (
           <>
@@ -50,9 +50,9 @@ const Layout = ({
       {footer && (
         <footer>
           <a
-            href="https://github.com/osawa-koki"
-            target="_blank"
-            rel="noreferrer"
+            href='https://github.com/osawa-koki'
+            target='_blank'
+            rel='noreferrer'
           >
             @osawa-koki
           </a>

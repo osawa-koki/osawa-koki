@@ -16,7 +16,7 @@ function Menu (props: {
 
   return (
     <>
-      <div id="Menu" className={menuOpen ? 'on' : ''}>
+      <div id='Menu' className={menuOpen ? 'on' : ''}>
         {pages.map((page, index: number) => {
           return (
             <Link
@@ -34,17 +34,17 @@ function Menu (props: {
           )
         })}
       </div>
-      <div id="ToMenu">
+      <div id='ToMenu'>
         <Button
-          id="Closer"
-          variant="primary"
+          id='Closer'
+          variant='primary'
           className={`btn-close btn-close-white ${menuOpen ? 'on' : ''}`}
           onClick={() => {
             setMenuOpen(false)
           }}
         ></Button>
         <BsGearFill
-          id="Opener"
+          id='Opener'
           className={menuOpen ? 'off' : ''}
           onClick={() => {
             setMenuOpen(true)
