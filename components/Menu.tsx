@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import pages from '../pages'
 import { Button } from 'react-bootstrap'
 import { BsGearFill } from 'react-icons/bs'
+import pages from '../pages'
 
 function Menu (props: {
   currentPage: string | null
-  setCurrentPage: React.Dispatch<React.SetStateAction<string | null>>
 }): JSX.Element {
   const {
-    currentPage,
-    setCurrentPage
+    currentPage
   } = props
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
 
@@ -27,7 +25,6 @@ function Menu (props: {
                   ? 'btn-primary'
                   : ''
               }`}
-              onClick={() => { setCurrentPage(page.path) }}
             >
               {page.emoji}&nbsp;{page.name}
             </Link>
