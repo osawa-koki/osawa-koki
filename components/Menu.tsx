@@ -6,7 +6,7 @@ import pages from '../pages'
 
 function Menu (props: {
   currentPage: string | null
-}): JSX.Element {
+}): React.JSX.Element {
   const {
     currentPage
   } = props

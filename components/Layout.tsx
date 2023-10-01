@@ -16,7 +16,7 @@ const Layout = ({
   title = setting.title,
   menu = true,
   footer = true
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const router = useRouter()
 
   const [currentPage, setCurrentPage] = useState<string | null>(null)

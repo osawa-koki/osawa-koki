@@ -2,7 +2,7 @@ import React from 'react'
 import setting from '../setting'
 import { Alert, Badge } from 'react-bootstrap'
 
-export default function ContactPage (): JSX.Element {
+export default function ContactPage (): React.JSX.Element {
   return (
     <>
       <h1 className='mt-5 border-start border-danger border-5 ps-3'>職務経歴書</h1>

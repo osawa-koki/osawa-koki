@@ -4,7 +4,7 @@ import { BsFillEnvelopeFill, BsGithub } from 'react-icons/bs'
 import setting from '../setting'
 import dayjs from 'dayjs'
 
-export default function ResumePage (): JSX.Element {
+export default function ResumePage (): React.JSX.Element {
   return (
     <>
       <h1 className='mt-5 border-start border-danger border-5 ps-3'>履歴書</h1>
