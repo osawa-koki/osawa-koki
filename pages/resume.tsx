@@ -1,8 +1,8 @@
 import React from 'react'
 import { ListGroup, Table } from 'react-bootstrap'
 import { BsFillEnvelopeFill, BsGithub } from 'react-icons/bs'
-import setting from '../setting'
 import dayjs from 'dayjs'
+import { resumeData } from '../data/resume'
 
 export default function ResumePage (): React.JSX.Element {
   return (
@@ -19,35 +19,35 @@ export default function ResumePage (): React.JSX.Element {
         <tbody>
           <tr>
             <td>名前</td>
-            <td>{setting.profile.name}</td>
+            <td>{resumeData.name}</td>
           </tr>
           <tr>
             <td>生年月日</td>
-            <td>{setting.profile.birthday.format('YYYY年 MM月 D日')} ({dayjs().diff(dayjs('1998-10-25'), 'year')}歳)</td>
+            <td>{resumeData.birthday.format('YYYY年 MM月 D日')} ({dayjs().diff(dayjs('1998-10-25'), 'year')}歳)</td>
           </tr>
           <tr>
             <td>性別</td>
-            <td>{setting.profile.sex}</td>
+            <td>{resumeData.sex}</td>
           </tr>
           <tr>
             <td>住所</td>
-            <td>{setting.profile.address}</td>
+            <td>{resumeData.address}</td>
           </tr>
           <tr>
             <td>メールアドレス</td>
-            <td><a href={`mailto:${setting.profile.email}`}><BsFillEnvelopeFill /></a>&nbsp;{setting.profile.email}</td>
+            <td><a href={`mailto:${resumeData.email}`}><BsFillEnvelopeFill /></a>&nbsp;{resumeData.email}</td>
           </tr>
           <tr>
             <td>GitHub</td>
             <td>
-              <a href={setting.profile.github.uri}><BsGithub /></a>&nbsp;{setting.profile.github.name}
+              <a href={resumeData.github.uri}><BsGithub /></a>&nbsp;{resumeData.github.name}
             </td>
           </tr>
           <tr>
             <td>資格</td>
             <td>
             <ListGroup>
-              {setting.profile.certifications.map((certification, index) => (
+              {resumeData.certifications.map((certification, index) => (
                 <ListGroup.Item key={index}>{certification.name}</ListGroup.Item>
               ))}
             </ListGroup>
@@ -65,7 +65,7 @@ export default function ResumePage (): React.JSX.Element {
         </thead>
         <tbody>
           {
-            setting.profile.educationalHistories.map((educationalHistory, index) => (
+            resumeData.educationalHistories.map((educationalHistory, index) => (
               <tr key={index}>
                 <td>{educationalHistory.date.format('YYYY年 MM月')}</td>
                 <td>{educationalHistory.event}</td>
@@ -84,7 +84,7 @@ export default function ResumePage (): React.JSX.Element {
         </thead>
         <tbody>
           {
-            setting.profile.workHistories.map((workHistory, index) => (
+            resumeData.workHistories.map((workHistory, index) => (
               <tr key={index}>
                 <td>{workHistory.date.format('YYYY年 MM月')}</td>
                 <td>{workHistory.event}</td>
