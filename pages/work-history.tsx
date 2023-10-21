@@ -1,43 +1,42 @@
-import React from 'react'
-import setting from '../setting'
-import { Alert, Badge } from 'react-bootstrap'
+import React, { useMemo, useState } from 'react'
+import { Form } from 'react-bootstrap'
+import { workHostoryData } from '../data/workHostory'
+import Detail from '../components/Detail'
 
 export default function ContactPage (): React.JSX.Element {
+  const [workId, setWorkId] = useState<string | null>()
+  const [projectId, setProjectId] = useState<string | null>()
+
+  const work = useMemo(() => workHostoryData.find(work => work.id === workId) ?? null, [workId])
+  const project = useMemo(() => work?.projects.find(project => project.id === projectId) ?? null, [projectId])
+
   return (
     <>
       <h1 className='mt-5 border-start border-danger border-5 ps-3'>職務経歴書</h1>
-      {
-        setting.works.map((work, index) => (
-          <div key={index}>
-            <h2 className='mt-5 border-start border-success border-4 ps-3'>{work.title}</h2>
-            <Alert className='mt-3' variant='info'>
-              <Alert.Heading>{work.startDate.format('YYYY年 MM月')} 〜 {work.endDate?.format('YYYY年 MM月') ?? '現在'}</Alert.Heading>
-              <p className='mt-3'>
-                {work.description}
-              </p>
-            </Alert>
-            {
-              work.projects.map((project, index) => (
-                <div key={index}>
-                  <h3 className='mt-3 border-start border-primary border-4 ps-3'>#{index + 1} - {project.title}</h3>
-                  <Alert className='mt-3' variant='light'>
-                    <Alert.Heading>{project.startDate.format('YYYY年 MM月')} 〜 {project.endDate?.format('YYYY年 MM月') ?? '現在'}</Alert.Heading>
-                    <p className='mt-3 pre-wrap'>
-                      {project.description}
-                    </p>
-                    {
-                      project.technologies.map((technology, index) => (
-                        <Badge key={index} bg='secondary' className='me-1'>{technology}</Badge>
-                      ))
-                    }
-                  </Alert>
-                </div>
-              ))
-            }
-            <hr className='my-5' />
-          </div>
-        ))
-      }
+      <Form.Select className='mt-1' onChange={(event) => {
+        setWorkId(event.currentTarget.value)
+        setProjectId(null)
+      }} value={workId ?? ''}>
+        <option value='00'>職歴を選択してください。</option>
+        {
+          workHostoryData.map((work, index) => (
+            <option key={index} value={work.id}>#{work.id} - {work.title}</option>
+          ))
+        }
+      </Form.Select>
+      {/* プロジェクトを選択させる。 */}
+      <Form.Select className='mt-1' onChange={(event) => {
+        setProjectId(event.currentTarget.value)
+      }} value={projectId ?? ''}>
+        <option value='00'>プロジェクトを選択してください。</option>
+        {
+          workHostoryData.find(work => work.id === workId)?.projects.map((project, index) => (
+            <option key={index} value={project.id}>#{project.id} - {project.title}</option>
+          ))
+        }
+      </Form.Select>
+      <hr />
+      <Detail work={work ?? null} project={project ?? null} />
     </>
   )
 }
