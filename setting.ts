@@ -1,4 +1,3 @@
-import dayjs from 'dayjs'
 import Env from './next.config.js'
 const isProd = process.env.NODE_ENV === 'production'
 
