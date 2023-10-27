@@ -1,4 +1,4 @@
-/**/dist/*
+/dist/
 !.gitkeep
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,nextjs,react,node,visualstudio,visualstudiocode
