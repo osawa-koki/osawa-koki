@@ -35,7 +35,7 @@
     "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@types/bootstrap": "^5.2.8",
+    "@types/bootstrap": "^5.2.9",
     "@types/jest": "^29.5.8",
     "@types/react": "^18.2.36",
     "@types/react-bootstrap": "^0.32.35",
